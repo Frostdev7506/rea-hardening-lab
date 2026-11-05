@@ -1,0 +1,28 @@
+{
+  "milliseconds": 7,
+  "output": {
+    "target": "before/browser/app.js",
+    "generated_unix": 1793915942,
+    "measurements": [
+      {
+        "axis": "string-exposure",
+        "baseline": 1,
+        "hardened": 0.4190871369294606
+      },
+      {
+        "axis": "analysis-noise",
+        "baseline": 1,
+        "hardened": 0
+      }
+    ],
+    "rrs": 79,
+    "grade": "B",
+    "notes": [
+      "strings: 101 of 241 baseline tokens still verbatim (exposure 1.00 -> 0.42)",
+      "symbols: skipped (no baseline signal; not applicable to this target)",
+      "debug-info: skipped (no baseline signal; not applicable to this target)",
+      "source-maps: skipped (no baseline signal; not applicable to this target)",
+      "analysis-noise: 100% injected (190997 of 184572 bytes)"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "cases": 768,
+  "distinctInputs": 767,
+  "distinctInputsPassed": 767,
+  "passed": 768,
+  "failed": 0,
+  "candidateSha256": "1aad5fde1b874e546bc5c49a03f0851497e7724ccb3adaf6678922bc94a36441",
+  "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+  "failures": []
+}

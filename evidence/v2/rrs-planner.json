@@ -1,0 +1,28 @@
+{
+  "milliseconds": 8,
+  "output": {
+    "target": "before/planner/app.js",
+    "generated_unix": 1793915942,
+    "measurements": [
+      {
+        "axis": "string-exposure",
+        "baseline": 1,
+        "hardened": 0.5564516129032258
+      },
+      {
+        "axis": "analysis-noise",
+        "baseline": 1,
+        "hardened": 0.06492279372166576
+      }
+    ],
+    "rrs": 69,
+    "grade": "C",
+    "notes": [
+      "strings: 207 of 372 baseline tokens still verbatim (exposure 1.00 -> 0.56)",
+      "symbols: skipped (no baseline signal; not applicable to this target)",
+      "debug-info: skipped (no baseline signal; not applicable to this target)",
+      "source-maps: skipped (no baseline signal; not applicable to this target)",
+      "analysis-noise: 94% injected (190997 of 204258 bytes)"
+    ]
+  }
+}

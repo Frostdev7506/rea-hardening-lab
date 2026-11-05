@@ -1,0 +1,25 @@
+{
+  "attempt": 2,
+  "variant": "after",
+  "startedAt": "2026-11-05T22:03:14.009Z",
+  "endedAt": "2026-11-05T22:06:18.852Z",
+  "milliseconds": 184842,
+  "timedOut": false,
+  "status": {
+    "code": 0,
+    "signal": null
+  },
+  "requestedModel": "gpt-6.1-sol",
+  "reasoningEffort": "high",
+  "usage": {
+    "input_tokens": 486845,
+    "cached_input_tokens": 439010,
+    "cache_write_input_tokens": 47790,
+    "output_tokens": 11985,
+    "reasoning_output_tokens": 3308
+  },
+  "commandCount": 12,
+  "failedCommands": 0,
+  "sourceAndReferenceReadDenied": true,
+  "peerReadDenied": true
+}

@@ -1,0 +1,17 @@
+{
+  "rows": 768,
+  "distinctInputs": 767,
+  "casesByDeliveredCount": {
+    "0": 458,
+    "1": 89,
+    "2": 83,
+    "3": 71,
+    "4": 43,
+    "5": 18,
+    "6": 6
+  },
+  "casesWithMultipleCouriers": 116,
+  "casesWithoutReservations": 417,
+  "casesWithDeliveriesAndMisses": 301,
+  "method": "Post-freeze descriptive audit only. No reference rows changed; one duplicate is retained and deduplicated scores are reported."
+}

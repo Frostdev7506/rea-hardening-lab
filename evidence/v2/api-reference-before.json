@@ -1,0 +1,7 @@
+{
+  "origin": "http://127.0.0.1:4330",
+  "passed": 417,
+  "cases": 417,
+  "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+  "scope": "Every frozen case without pre-reserved resources, checked against the running API. Stateful resource reservation is checked separately by check-dispatch-api.mjs."
+}

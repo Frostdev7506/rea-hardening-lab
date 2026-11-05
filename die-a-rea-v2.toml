@@ -1,0 +1,25 @@
+[project]
+name = "dispatch-lab-v2"
+version = "2.0.0"
+
+[policy]
+profile = "high"
+
+# Randomization and tarpit sections are omitted deliberately: use full pinned
+# upstream defaults, including the authorization notice and prompt gate.
+
+[verify]
+command = 'node --check "{artifact}"'
+js_syntax = true
+
+[[targets]]
+path = "before/browser/app.js"
+
+[[targets]]
+path = "before/planner/app.js"
+
+[[targets]]
+path = "before/persistence/app.js"
+
+[[targets]]
+path = "before/page/app.js"

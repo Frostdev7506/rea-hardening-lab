@@ -5,6 +5,11 @@ node_modules/
 /artifacts/
 evidence/artifacts/*.js
 evidence/rea-*.json
+evidence/v2/artifacts/*.js
+evidence/v2/recoveries/**/browser.js
+evidence/v2/recoveries/**/planner.js
+evidence/v2/recoveries/**/persistence.js
+evidence/v2/recoveries/**/page.js
 recoveries/after/server-decoded.js
 *.tsbuildinfo
 .env*

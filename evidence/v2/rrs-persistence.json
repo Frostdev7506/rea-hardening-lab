@@ -1,0 +1,28 @@
+{
+  "milliseconds": 9,
+  "output": {
+    "target": "before/persistence/app.js",
+    "generated_unix": 1793915942,
+    "measurements": [
+      {
+        "axis": "string-exposure",
+        "baseline": 1,
+        "hardened": 0.5476190476190477
+      },
+      {
+        "axis": "analysis-noise",
+        "baseline": 1,
+        "hardened": 0.014483705186683404
+      }
+    ],
+    "rrs": 72,
+    "grade": "C",
+    "notes": [
+      "strings: 184 of 336 baseline tokens still verbatim (exposure 1.00 -> 0.55)",
+      "symbols: skipped (no baseline signal; not applicable to this target)",
+      "debug-info: skipped (no baseline signal; not applicable to this target)",
+      "source-maps: skipped (no baseline signal; not applicable to this target)",
+      "analysis-noise: 99% injected (190997 of 193804 bytes)"
+    ]
+  }
+}

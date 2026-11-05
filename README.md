@@ -24,7 +24,11 @@ npm run test:dispatch -- http://127.0.0.1:4320 evidence/v2/functional-checks.jso
 
 [Planner design and boundaries](docs/dispatch-planner.md) · [V2 checks and screenshots](evidence/v2/README.md) · [Review of the original experiment](docs/test-audit.md)
 
-**V2 has functional test evidence, but no REA/die-a-rea recovery result yet.** The historical measurements below apply only to V1. The original lab scripts still target the quote calculation; they are not a V2 benchmark harness.
+**V2 result, 6 November 2026:** all three original and all three full-default hardened candidates passed **768/768 checks (767 distinct inputs)**. Median attempt completion time rose from **2:01 to 2:39 (31.5%)**; median uncached input tokens rose **58.4%**, and output tokens **29.9%**. The selected browser chunk grew **14.34× after gzip**. This configuration added analysis work but did not prevent planner recovery in these runs. The paired build used matching requested model/settings; resolved backend model identity is not independently attested, and no dollar-cost estimate is made.
+
+[V2 results and scope](evidence/v2/summary.json) · [Replay and fresh-run commands](docs/v2-reproduction.md) · [Per-attempt candidates and scores](evidence/v2/recoveries)
+
+The historical measurements below apply only to V1. `scripts/lab.mjs` targets that quote calculation; `scripts/v2-lab.mjs` is the separate V2 harness.
 
 ## Historical experiment: Parcel Lab (V1)
 

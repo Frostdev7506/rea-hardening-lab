@@ -1,0 +1,368 @@
+{
+  "version": 2,
+  "recordedAt": "2026-11-05T22:15:55.060Z",
+  "sourceCommit": "cb1776ef2b232f25133e7ce86155734e5ebb13d8",
+  "cases": 768,
+  "caseCoverage": {
+    "rows": 768,
+    "distinctInputs": 767,
+    "casesByDeliveredCount": {
+      "0": 458,
+      "1": 89,
+      "2": 83,
+      "3": 71,
+      "4": 43,
+      "5": 18,
+      "6": 6
+    },
+    "casesWithMultipleCouriers": 116,
+    "casesWithoutReservations": 417,
+    "casesWithDeliveriesAndMisses": 301,
+    "method": "Post-freeze descriptive audit only. No reference rows changed; one duplicate is retained and deduplicated scores are reported."
+  },
+  "oracleCheck": {
+    "cases": 768,
+    "passed": 768,
+    "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+    "method": "Floyd–Warshall travel, independently enumerated route prefixes, disjoint-mask dynamic programming. Does not call planDispatch. Added as an oracle audit after freezing cases; no reference or attempt inputs changed."
+  },
+  "runtimeBefore": {
+    "origin": "http://127.0.0.1:4330",
+    "passed": 417,
+    "cases": 417,
+    "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+    "scope": "Every frozen case without pre-reserved resources, checked against the running API. Stateful resource reservation is checked separately by check-dispatch-api.mjs."
+  },
+  "runtimeAfter": {
+    "origin": "http://127.0.0.1:4331",
+    "passed": 417,
+    "cases": 417,
+    "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+    "scope": "Every frozen case without pre-reserved resources, checked against the running API. Stateful resource reservation is checked separately by check-dispatch-api.mjs."
+  },
+  "workflowAfter": {
+    "version": 2,
+    "origin": "http://127.0.0.1:4331",
+    "passed": true,
+    "checks": [
+      "All six shipments receive a feasible draft plan.",
+      "Closing the bridge changes routes and cost.",
+      "Removing refrigeration leaves both medical deliveries unassigned.",
+      "An urgent delivery displaces another shipment under the joint constraints.",
+      "Competing draft commits reserve each shipment once; the losing transaction conflicts.",
+      "Retrying the winning commit is idempotent, and GET restores the saved plan.",
+      "Replanning excludes reserved shipments and cannot reuse already dispatched couriers.",
+      "Disjoint shipments still conflict when their draft plans need the same physical courier.",
+      "Malformed, oversized, forged and unknown inputs are rejected; a fresh batch is independent."
+    ],
+    "scope": "Functional application checks. No version-two REA or recovery-cost result is asserted."
+  },
+  "sizes": {
+    "browser": {
+      "before": {
+        "bytes": 14199,
+        "gzipBytes": 4733,
+        "sha256": "51b7458313603b910c9d4fa6cf87cd146a87638b883af02074e600d5c15cdd9c"
+      },
+      "after": {
+        "bytes": 184572,
+        "gzipBytes": 67850,
+        "sha256": "40aba671ae135929b664c860dfa65a8736f2b62aa34dd7fd7be192b3058ff37d"
+      }
+    },
+    "planner": {
+      "before": {
+        "bytes": 20211,
+        "gzipBytes": 7872,
+        "sha256": "d0c8cc359a5c51e01287834571ef991551083ccd0c5be1bf2a09ef28e92a0920"
+      },
+      "after": {
+        "bytes": 204258,
+        "gzipBytes": 75830,
+        "sha256": "f5dcfa03a4143fb7b6aa81d9b40dcb622ce9e7493f75fe695f7360e1210ac01c"
+      }
+    },
+    "persistence": {
+      "before": {
+        "bytes": 16617,
+        "gzipBytes": 6378,
+        "sha256": "044bff8a766dfb9e28ba2cc7f10f2eaa7dcbb2a2195bb790e3299ea04cf81df4"
+      },
+      "after": {
+        "bytes": 193804,
+        "gzipBytes": 72673,
+        "sha256": "7af1a3e07d1133d92379737f5595ad69e5cc88c51b008d097c47e2ae194e01fb"
+      }
+    },
+    "page": {
+      "before": {
+        "bytes": 32156,
+        "gzipBytes": 10493,
+        "sha256": "16dc7bdae8c6d2e0effb25b36e1a1c198778dbfe2dc3dbb0f1d54e286d6d01a4"
+      },
+      "after": {
+        "bytes": 231546,
+        "gzipBytes": 83060,
+        "sha256": "db4b0599c96c22146b6dfc32ee72cbd62468f112356e4b0a3f703a989e4363b2"
+      }
+    }
+  },
+  "variants": {
+    "before": {
+      "attempts": 3,
+      "correctAttempts": 3,
+      "correctWithinBudget": 3,
+      "medianMilliseconds": 120787,
+      "millisecondsRange": [
+        104120,
+        123968
+      ],
+      "medianInputTokens": 178965,
+      "medianCachedInputTokens": 149145,
+      "medianUncachedInputTokens": 29820,
+      "medianOutputTokens": 8330,
+      "medianReasoningOutputTokens": 1736,
+      "medianCommands": 8
+    },
+    "after": {
+      "attempts": 3,
+      "correctAttempts": 3,
+      "correctWithinBudget": 3,
+      "medianMilliseconds": 158864,
+      "millisecondsRange": [
+        129043,
+        184842
+      ],
+      "medianInputTokens": 424924,
+      "medianCachedInputTokens": 377682,
+      "medianUncachedInputTokens": 47242,
+      "medianOutputTokens": 10821,
+      "medianReasoningOutputTokens": 2541,
+      "medianCommands": 12
+    }
+  },
+  "trials": [
+    {
+      "attempt": 1,
+      "variant": "before",
+      "startedAt": "2026-11-05T22:01:13.166Z",
+      "endedAt": "2026-11-05T22:03:13.954Z",
+      "milliseconds": 120787,
+      "timedOut": false,
+      "status": {
+        "code": 0,
+        "signal": null
+      },
+      "requestedModel": "gpt-6.1-sol",
+      "reasoningEffort": "high",
+      "usage": {
+        "input_tokens": 174153,
+        "cached_input_tokens": 144918,
+        "cache_write_input_tokens": 29208,
+        "output_tokens": 8289,
+        "reasoning_output_tokens": 1736
+      },
+      "commandCount": 8,
+      "failedCommands": 0,
+      "sourceAndReferenceReadDenied": true,
+      "peerReadDenied": true,
+      "score": {
+        "cases": 768,
+        "distinctInputs": 767,
+        "distinctInputsPassed": 767,
+        "passed": 768,
+        "failed": 0,
+        "candidateSha256": "36941b658f8da55fa9038a4f9d82ce919c111cb74439e3d5c421db2c23979b6e",
+        "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+        "failures": []
+      },
+      "uncachedInputTokens": 29235
+    },
+    {
+      "attempt": 2,
+      "variant": "after",
+      "startedAt": "2026-11-05T22:03:14.009Z",
+      "endedAt": "2026-11-05T22:06:18.852Z",
+      "milliseconds": 184842,
+      "timedOut": false,
+      "status": {
+        "code": 0,
+        "signal": null
+      },
+      "requestedModel": "gpt-6.1-sol",
+      "reasoningEffort": "high",
+      "usage": {
+        "input_tokens": 486845,
+        "cached_input_tokens": 439010,
+        "cache_write_input_tokens": 47790,
+        "output_tokens": 11985,
+        "reasoning_output_tokens": 3308
+      },
+      "commandCount": 12,
+      "failedCommands": 0,
+      "sourceAndReferenceReadDenied": true,
+      "peerReadDenied": true,
+      "score": {
+        "cases": 768,
+        "distinctInputs": 767,
+        "distinctInputsPassed": 767,
+        "passed": 768,
+        "failed": 0,
+        "candidateSha256": "b6fbbf58518cabc828b37e94b56039a8ef0b917fab6ac8e0ed1e009c1c207bfe",
+        "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+        "failures": []
+      },
+      "uncachedInputTokens": 47835
+    },
+    {
+      "attempt": 3,
+      "variant": "after",
+      "startedAt": "2026-11-05T22:06:18.908Z",
+      "endedAt": "2026-11-05T22:08:57.773Z",
+      "milliseconds": 158864,
+      "timedOut": false,
+      "status": {
+        "code": 0,
+        "signal": null
+      },
+      "requestedModel": "gpt-6.1-sol",
+      "reasoningEffort": "high",
+      "usage": {
+        "input_tokens": 424924,
+        "cached_input_tokens": 377682,
+        "cache_write_input_tokens": 47197,
+        "output_tokens": 10821,
+        "reasoning_output_tokens": 2541
+      },
+      "commandCount": 14,
+      "failedCommands": 2,
+      "sourceAndReferenceReadDenied": true,
+      "peerReadDenied": true,
+      "score": {
+        "cases": 768,
+        "distinctInputs": 767,
+        "distinctInputsPassed": 767,
+        "passed": 768,
+        "failed": 0,
+        "candidateSha256": "f31c5b3062d186b1f32ba247a6eaf93d074b5987e6156005141dca49adbc6a6e",
+        "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+        "failures": []
+      },
+      "uncachedInputTokens": 47242
+    },
+    {
+      "attempt": 4,
+      "variant": "before",
+      "startedAt": "2026-11-05T22:08:57.831Z",
+      "endedAt": "2026-11-05T22:10:41.952Z",
+      "milliseconds": 104120,
+      "timedOut": false,
+      "status": {
+        "code": 0,
+        "signal": null
+      },
+      "requestedModel": "gpt-6.1-sol",
+      "reasoningEffort": "high",
+      "usage": {
+        "input_tokens": 178965,
+        "cached_input_tokens": 149145,
+        "cache_write_input_tokens": 29793,
+        "output_tokens": 8330,
+        "reasoning_output_tokens": 1371
+      },
+      "commandCount": 8,
+      "failedCommands": 2,
+      "sourceAndReferenceReadDenied": true,
+      "peerReadDenied": true,
+      "score": {
+        "cases": 768,
+        "distinctInputs": 767,
+        "distinctInputsPassed": 767,
+        "passed": 768,
+        "failed": 0,
+        "candidateSha256": "1aad5fde1b874e546bc5c49a03f0851497e7724ccb3adaf6678922bc94a36441",
+        "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+        "failures": []
+      },
+      "uncachedInputTokens": 29820
+    },
+    {
+      "attempt": 5,
+      "variant": "before",
+      "startedAt": "2026-11-05T22:10:42.007Z",
+      "endedAt": "2026-11-05T22:12:45.975Z",
+      "milliseconds": 123968,
+      "timedOut": false,
+      "status": {
+        "code": 0,
+        "signal": null
+      },
+      "requestedModel": "gpt-6.1-sol",
+      "reasoningEffort": "high",
+      "usage": {
+        "input_tokens": 197443,
+        "cached_input_tokens": 166949,
+        "cache_write_input_tokens": 30464,
+        "output_tokens": 9597,
+        "reasoning_output_tokens": 1755
+      },
+      "commandCount": 9,
+      "failedCommands": 0,
+      "sourceAndReferenceReadDenied": true,
+      "peerReadDenied": true,
+      "score": {
+        "cases": 768,
+        "distinctInputs": 767,
+        "distinctInputsPassed": 767,
+        "passed": 768,
+        "failed": 0,
+        "candidateSha256": "d3fcc899840f1f78cc929877a4a285fad414cc2baf858686949befeec5bd3b6c",
+        "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+        "failures": []
+      },
+      "uncachedInputTokens": 30494
+    },
+    {
+      "attempt": 6,
+      "variant": "after",
+      "startedAt": "2026-11-05T22:12:46.034Z",
+      "endedAt": "2026-11-05T22:14:55.078Z",
+      "milliseconds": 129043,
+      "timedOut": false,
+      "status": {
+        "code": 0,
+        "signal": null
+      },
+      "requestedModel": "gpt-6.1-sol",
+      "reasoningEffort": "high",
+      "usage": {
+        "input_tokens": 325636,
+        "cached_input_tokens": 284543,
+        "cache_write_input_tokens": 41057,
+        "output_tokens": 9394,
+        "reasoning_output_tokens": 1950
+      },
+      "commandCount": 11,
+      "failedCommands": 0,
+      "sourceAndReferenceReadDenied": true,
+      "peerReadDenied": true,
+      "score": {
+        "cases": 768,
+        "distinctInputs": 767,
+        "distinctInputsPassed": 767,
+        "passed": 768,
+        "failed": 0,
+        "candidateSha256": "b93411d76374ed1d642d44203243427896dfcc58fded563df7f420a9573c1e3e",
+        "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+        "failures": []
+      },
+      "uncachedInputTokens": 41093
+    }
+  ],
+  "medianRatiosAfterOverBefore": {
+    "wallTime": 1.3152408785713694,
+    "uncachedInputTokens": 1.5842387659289068,
+    "outputTokens": 1.2990396158463384
+  },
+  "interpretation": "Copied-build planner recovery; three completed attempts per variant under a 480-second ceiling. Token fields are CLI-reported cumulative usage including repeated context/cache behavior. No dollar-cost or backend-model attestation claim. Static REA preprocessing is recorded separately and not included in agent process wall time. Finite correctness checks and small repeated samples are not a universal reverse-engineering resistance rate."
+}

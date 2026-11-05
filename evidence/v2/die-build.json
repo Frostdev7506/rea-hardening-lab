@@ -1,0 +1,128 @@
+{
+  "milliseconds": 2602,
+  "output": {
+    "output_dir": "hardened",
+    "seed": 20261106,
+    "targets": [
+      {
+        "target": "before/browser/app.js",
+        "kind": "javascript",
+        "output": "hardened/before/browser/app.js",
+        "canaries": [
+          "DIREA-CANARY-8dc3059e6eb861d2"
+        ],
+        "actions": [
+          "strip source maps",
+          "strip full-line comments",
+          "inject authorization notice",
+          "embed 1 canary token(s)",
+          "inject 200 decoy function(s) and 500 decoy string(s)",
+          "add tarpit padding (~128 KiB, cap 4096 KiB) and 25 honeypot(s)",
+          "js adapter: <die-a-rea>/adapters/js/direa-js",
+          "js: hardened/before/browser/app.js"
+        ],
+        "injected": {
+          "decoy_functions": 200,
+          "decoy_strings": 500,
+          "decoy_files": 0,
+          "injected_string_runs": 14441,
+          "depth_bytes": 7173,
+          "padding_bytes": 131143,
+          "injected_bytes": 190997
+        },
+        "noise_fraction": 1
+      },
+      {
+        "target": "before/planner/app.js",
+        "kind": "javascript",
+        "output": "hardened/before/planner/app.js",
+        "canaries": [
+          "DIREA-CANARY-8dc3059e6eb861d2"
+        ],
+        "actions": [
+          "strip source maps",
+          "strip full-line comments",
+          "inject authorization notice",
+          "embed 1 canary token(s)",
+          "inject 200 decoy function(s) and 500 decoy string(s)",
+          "add tarpit padding (~128 KiB, cap 4096 KiB) and 25 honeypot(s)",
+          "js adapter: <die-a-rea>/adapters/js/direa-js",
+          "js: hardened/before/planner/app.js"
+        ],
+        "injected": {
+          "decoy_functions": 200,
+          "decoy_strings": 500,
+          "decoy_files": 0,
+          "injected_string_runs": 14441,
+          "depth_bytes": 7173,
+          "padding_bytes": 131143,
+          "injected_bytes": 190997
+        },
+        "noise_fraction": 0.9350772062783342
+      },
+      {
+        "target": "before/persistence/app.js",
+        "kind": "javascript",
+        "output": "hardened/before/persistence/app.js",
+        "canaries": [
+          "DIREA-CANARY-8dc3059e6eb861d2"
+        ],
+        "actions": [
+          "strip source maps",
+          "strip full-line comments",
+          "inject authorization notice",
+          "embed 1 canary token(s)",
+          "inject 200 decoy function(s) and 500 decoy string(s)",
+          "add tarpit padding (~128 KiB, cap 4096 KiB) and 25 honeypot(s)",
+          "js adapter: <die-a-rea>/adapters/js/direa-js",
+          "js: hardened/before/persistence/app.js"
+        ],
+        "injected": {
+          "decoy_functions": 200,
+          "decoy_strings": 500,
+          "decoy_files": 0,
+          "injected_string_runs": 14441,
+          "depth_bytes": 7173,
+          "padding_bytes": 131143,
+          "injected_bytes": 190997
+        },
+        "noise_fraction": 0.9855162948133166
+      },
+      {
+        "target": "before/page/app.js",
+        "kind": "javascript",
+        "output": "hardened/before/page/app.js",
+        "canaries": [
+          "DIREA-CANARY-8dc3059e6eb861d2"
+        ],
+        "actions": [
+          "strip source maps",
+          "strip full-line comments",
+          "inject authorization notice",
+          "embed 1 canary token(s)",
+          "inject 200 decoy function(s) and 500 decoy string(s)",
+          "add tarpit padding (~128 KiB, cap 4096 KiB) and 25 honeypot(s)",
+          "js adapter: <die-a-rea>/adapters/js/direa-js",
+          "js: hardened/before/page/app.js"
+        ],
+        "injected": {
+          "decoy_functions": 200,
+          "decoy_strings": 500,
+          "decoy_files": 0,
+          "injected_string_runs": 14441,
+          "depth_bytes": 7173,
+          "padding_bytes": 131143,
+          "injected_bytes": 190997
+        },
+        "noise_fraction": 0.8248771302462578
+      }
+    ],
+    "notes": [
+      "js adapter: Ok — obfuscated 1 file(s)",
+      "js adapter: Ok — obfuscated 1 file(s)",
+      "js adapter: Ok — obfuscated 1 file(s)",
+      "js adapter: Ok — obfuscated 1 file(s)",
+      "wrote build metadata to hardened/die-a-rea.build.json"
+    ]
+  }
+}

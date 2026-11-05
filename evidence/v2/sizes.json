@@ -1,0 +1,50 @@
+{
+  "browser": {
+    "before": {
+      "bytes": 14199,
+      "gzipBytes": 4733,
+      "sha256": "51b7458313603b910c9d4fa6cf87cd146a87638b883af02074e600d5c15cdd9c"
+    },
+    "after": {
+      "bytes": 184572,
+      "gzipBytes": 67850,
+      "sha256": "40aba671ae135929b664c860dfa65a8736f2b62aa34dd7fd7be192b3058ff37d"
+    }
+  },
+  "planner": {
+    "before": {
+      "bytes": 20211,
+      "gzipBytes": 7872,
+      "sha256": "d0c8cc359a5c51e01287834571ef991551083ccd0c5be1bf2a09ef28e92a0920"
+    },
+    "after": {
+      "bytes": 204258,
+      "gzipBytes": 75830,
+      "sha256": "f5dcfa03a4143fb7b6aa81d9b40dcb622ce9e7493f75fe695f7360e1210ac01c"
+    }
+  },
+  "persistence": {
+    "before": {
+      "bytes": 16617,
+      "gzipBytes": 6378,
+      "sha256": "044bff8a766dfb9e28ba2cc7f10f2eaa7dcbb2a2195bb790e3299ea04cf81df4"
+    },
+    "after": {
+      "bytes": 193804,
+      "gzipBytes": 72673,
+      "sha256": "7af1a3e07d1133d92379737f5595ad69e5cc88c51b008d097c47e2ae194e01fb"
+    }
+  },
+  "page": {
+    "before": {
+      "bytes": 32156,
+      "gzipBytes": 10493,
+      "sha256": "16dc7bdae8c6d2e0effb25b36e1a1c198778dbfe2dc3dbb0f1d54e286d6d01a4"
+    },
+    "after": {
+      "bytes": 231546,
+      "gzipBytes": 83060,
+      "sha256": "db4b0599c96c22146b6dfc32ee72cbd62468f112356e4b0a3f703a989e4363b2"
+    }
+  }
+}

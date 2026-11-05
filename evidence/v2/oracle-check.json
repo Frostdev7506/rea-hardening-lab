@@ -1,0 +1,6 @@
+{
+  "cases": 768,
+  "passed": 768,
+  "referenceSha256": "2fc7b420b87287a81d4f3b16a06d5f9ccfc6e848c8a7d009ffecbef30626f885",
+  "method": "Floyd–Warshall travel, independently enumerated route prefixes, disjoint-mask dynamic programming. Does not call planDispatch. Added as an oracle audit after freezing cases; no reference or attempt inputs changed."
+}
