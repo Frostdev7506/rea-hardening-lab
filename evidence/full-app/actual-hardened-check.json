@@ -1,0 +1,6 @@
+{
+  "cases": 312,
+  "passed": 312,
+  "referenceSha256": "23441b14e5453fb4614686bf7abaeb300b871faa885d667718e0fe143976b3e9",
+  "scope": "The actual die-a-rea protected original runtime, not a reconstruction. Confirms the new full-app cases were preserved by hardening."
+}

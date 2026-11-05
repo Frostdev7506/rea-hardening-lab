@@ -1,0 +1,29 @@
+{
+  "trial": "trial-b",
+  "variant": "after",
+  "origin": "http://127.0.0.1:4372",
+  "functionalChecksPassed": [
+    "Initial dispatch controls and queue render.",
+    "Full-fleet 09:00 plan displays 6/6 and $54.83.",
+    "Changing start invalidates the old result.",
+    "09:30 replan displays $261.11, confirming original $260.87 mismatch.",
+    "Urgent kit displays 6/7, $149.37 and P106 unassigned.",
+    "Commit confirms six shipments; query URL restores committed state after reload.",
+    "New batch restores fresh planning controls.",
+    "Bridge closure replans to $62.03.",
+    "Legacy quote defaults give $12.75, dispatch Nov6 and delivery Nov12.",
+    "Booking displays Reserved and disables the button."
+  ],
+  "planningEquivalence": false,
+  "knownPlannerFailures": 54,
+  "minorDifferences": [
+    "Root page title/skip-link wording differ."
+  ],
+  "responsiveCheck": {
+    "requestedWidth": 390,
+    "observedViewportWidth": 1470,
+    "observedDocumentWidth": 1470,
+    "status": "Viewport override did not apply to this tab; no narrow-layout pass claimed for trial-b."
+  },
+  "limits": "Parent Chrome functional checks, no exhaustive pixel or cross-browser certification. Shared CSS/screenshots supplied. Primary correctness is graded through HTTP independently."
+}

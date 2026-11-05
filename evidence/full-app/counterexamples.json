@@ -1,0 +1,258 @@
+[
+  {
+    "id": "app-1",
+    "scenario": {
+      "disabledCouriers": [],
+      "closedRoads": [],
+      "startMinute": 480,
+      "urgent": false
+    },
+    "values": {
+      "original": {
+        "status": 201,
+        "objectiveCents": 14085,
+        "routeCostCents": 5585,
+        "penaltyCents": 8500,
+        "delivered": 5,
+        "routes": [
+          {
+            "courierId": "sprinter",
+            "shipmentIds": [
+              "P104",
+              "P102",
+              "P101"
+            ],
+            "returnMinute": 598
+          },
+          {
+            "courierId": "coldbox",
+            "shipmentIds": [
+              "P106",
+              "P105"
+            ],
+            "returnMinute": 587
+          }
+        ]
+      },
+      "actualHardened": {
+        "status": 201,
+        "objectiveCents": 14085,
+        "routeCostCents": 5585,
+        "penaltyCents": 8500,
+        "delivered": 5,
+        "routes": [
+          {
+            "courierId": "sprinter",
+            "shipmentIds": [
+              "P104",
+              "P102",
+              "P101"
+            ],
+            "returnMinute": 598
+          },
+          {
+            "courierId": "coldbox",
+            "shipmentIds": [
+              "P106",
+              "P105"
+            ],
+            "returnMinute": 587
+          }
+        ]
+      },
+      "reconstructedOriginal": {
+        "status": 201,
+        "objectiveCents": 14085,
+        "routeCostCents": 5585,
+        "penaltyCents": 8500,
+        "delivered": 5,
+        "routes": [
+          {
+            "courierId": "sprinter",
+            "shipmentIds": [
+              "P104",
+              "P102",
+              "P101"
+            ],
+            "returnMinute": 598
+          },
+          {
+            "courierId": "coldbox",
+            "shipmentIds": [
+              "P106",
+              "P105"
+            ],
+            "returnMinute": 587
+          }
+        ]
+      },
+      "reconstructedHardened": {
+        "status": 201,
+        "objectiveCents": 16022,
+        "routeCostCents": 6522,
+        "penaltyCents": 9500,
+        "delivered": 5,
+        "routes": [
+          {
+            "courierId": "sprinter",
+            "shipmentIds": [
+              "P104",
+              "P102",
+              "P101"
+            ],
+            "returnMinute": 598
+          },
+          {
+            "courierId": "coldbox",
+            "shipmentIds": [
+              "P103"
+            ],
+            "returnMinute": 579
+          },
+          {
+            "courierId": "cargo",
+            "shipmentIds": [
+              "P105"
+            ],
+            "returnMinute": 561
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "app-97",
+    "scenario": {
+      "disabledCouriers": [],
+      "closedRoads": [],
+      "startMinute": 570,
+      "urgent": false
+    },
+    "values": {
+      "original": {
+        "status": 201,
+        "objectiveCents": 26087,
+        "routeCostCents": 4587,
+        "penaltyCents": 21500,
+        "delivered": 4,
+        "routes": [
+          {
+            "courierId": "sprinter",
+            "shipmentIds": [
+              "P105",
+              "P104"
+            ],
+            "returnMinute": 645
+          },
+          {
+            "courierId": "coldbox",
+            "shipmentIds": [
+              "P103"
+            ],
+            "returnMinute": 642
+          },
+          {
+            "courierId": "cargo",
+            "shipmentIds": [
+              "P101"
+            ],
+            "returnMinute": 606
+          }
+        ]
+      },
+      "actualHardened": {
+        "status": 201,
+        "objectiveCents": 26087,
+        "routeCostCents": 4587,
+        "penaltyCents": 21500,
+        "delivered": 4,
+        "routes": [
+          {
+            "courierId": "sprinter",
+            "shipmentIds": [
+              "P105",
+              "P104"
+            ],
+            "returnMinute": 645
+          },
+          {
+            "courierId": "coldbox",
+            "shipmentIds": [
+              "P103"
+            ],
+            "returnMinute": 642
+          },
+          {
+            "courierId": "cargo",
+            "shipmentIds": [
+              "P101"
+            ],
+            "returnMinute": 606
+          }
+        ]
+      },
+      "reconstructedOriginal": {
+        "status": 201,
+        "objectiveCents": 26087,
+        "routeCostCents": 4587,
+        "penaltyCents": 21500,
+        "delivered": 4,
+        "routes": [
+          {
+            "courierId": "sprinter",
+            "shipmentIds": [
+              "P105",
+              "P104"
+            ],
+            "returnMinute": 645
+          },
+          {
+            "courierId": "coldbox",
+            "shipmentIds": [
+              "P103"
+            ],
+            "returnMinute": 642
+          },
+          {
+            "courierId": "cargo",
+            "shipmentIds": [
+              "P101"
+            ],
+            "returnMinute": 606
+          }
+        ]
+      },
+      "reconstructedHardened": {
+        "status": 201,
+        "objectiveCents": 26111,
+        "routeCostCents": 4611,
+        "penaltyCents": 21500,
+        "delivered": 4,
+        "routes": [
+          {
+            "courierId": "sprinter",
+            "shipmentIds": [
+              "P101",
+              "P104"
+            ],
+            "returnMinute": 645
+          },
+          {
+            "courierId": "coldbox",
+            "shipmentIds": [
+              "P103"
+            ],
+            "returnMinute": 642
+          },
+          {
+            "courierId": "cargo",
+            "shipmentIds": [
+              "P105"
+            ],
+            "returnMinute": 608
+          }
+        ]
+      }
+    }
+  }
+]

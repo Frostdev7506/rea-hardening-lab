@@ -1,0 +1,50 @@
+{
+  "freshSessionId": "01a1addb-72ae-77c0-b70c-f44ab49b00ed",
+  "reaCommandEvents": [
+    {
+      "command": "/bin/zsh -lc 'node -v; node <home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/scripts/rea.mjs analyze-javascript-application inputs --max-semantic-nodes 12000 --max-semantic-nodes-per-file 12000 --max-semantic-unknowns 4000 --max-semantic-unknowns-per-file 4000 --analysis-timeout-ms 60000 --max-heap-mb 1024 --format json > rea-analysis.json'",
+      "shellExitCode": 1,
+      "outputTail": "roviderCleanupError: Provider javascript-static-analysis adapter failed during analyze_javascript_application\n    at #cleanupError (file://<home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/dist/cli-runtime/application__javascript__JavaScriptApplicationService-BV_coz3_.js:2598:12)\n    at JavaScriptAnalysisWorker.close (file://<home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/dist/cli-runtime/application__javascript__JavaScriptApplicationService-BV_coz3_.js:2233:39)\n    ... 3 lines matching cause stack trace ...\n    at async file://<home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/scripts/rea.mjs:208:7 {\n  limit: undefined,\n  diagnostics: {\n    reason: 'process table could not be inspected: spawn EPERM',\n    worker_pid: 59306\n  },\n  capturedOutput: undefined,\n  cleanup: undefined,\n  cleanupIncomplete: true,\n  userMessage: 'Provider cleanup could not be fully confirmed. Review the reported local resources before opening another target.',\n  userCategory: undefined,\n  executionFailure: undefined,\n  partialObservation: undefined,\n  cleanupReport: undefined,\n  providerId: 'javascript-static-analysis',\n  operation: 'analyze_javascript_application',\n  _tag: 'ProviderAdapterError',\n  remediationAction: undefined,\n  [cause]: Error: process table could not be inspected: spawn EPERM\n      at #cleanupError (file://<home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/dist/cli-runtime/application__javascript__JavaScriptApplicationService-BV_coz3_.js:2613:13)\n      at JavaScriptAnalysisWorker.close (file://<home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/dist/cli-runtime/application__javascript__JavaScriptApplicationService-BV_coz3_.js:2233:39)\n      at async file://<home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/dist/cli-runtime/application__javascript__JavaScriptApplicationService-BV_coz3_.js:2699:5\n      at async #runCloseHooks (file://<home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/dist/cli-runtime/ArtifactResourceScope-BLhM2W5p.js:123:7)\n      at async #finishClose (file://<home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/dist/cli-runtime/ArtifactResourceScope-BLhM2W5p.js:134:19)\n      at async file://<home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/scripts/rea.mjs:208:7\n}\n\nNode.js v24.13.1\n"
+    },
+    {
+      "command": "/bin/zsh -lc \"node <home>/.codex/tmp/rea-hardening-lab-tools/runtime/node_modules/rea-agents/scripts/rea.mjs analyze-javascript-application inputs --max-semantic-nodes 12000 --max-semantic-nodes-per-file 12000 --max-semantic-unknowns 4000 --max-semantic-unknowns-per-file 4000 --analysis-timeout-ms 60000 --max-heap-mb 1024 --format json > rea-analysis.json 2> rea-stderr.log; printf 'REA exit: %s\\\\n' \\\"\"'$?\" > rea-exit.txt'",
+      "shellExitCode": 0,
+      "outputTail": ""
+    }
+  ],
+  "buildEvents": [
+    {
+      "commandSha256": "1adff5108efc0b7d8c59ac115e2b6b9a48301eed1c3f1b271f6910d67333f89b",
+      "shellExitCode": 1,
+      "completedProductionBuildInOutput": false,
+      "outputTail": "\n> reconstructed-app@1.0.0 build\n> next build --webpack\n\n\u25b2 Next.js 16.4.5 (webpack)\n\u2713 Running next.config.ts took 1539ms\n\n  Creating an optimized production build ...\n\u2a2f src/app/quote/page.jsx doesn't have a root layout. To fix this error, make sure every page has a root layout.\nNext.js build worker exited with code: 1 and signal: null\n"
+    },
+    {
+      "commandSha256": "7bc4df06bf9b9076ead8ddba3870a2b81d5346a9de4f13cbe7230e2e4515b8f1",
+      "shellExitCode": 0,
+      "completedProductionBuildInOutput": false,
+      "outputTail": "\u25b2 Next.js 16.4.5 (webpack)\n\u2713 Running next.config.ts took 15ms\n\n  Creating an optimized production build ...\n\u2713 Compiled successfully in 1621ms\n  Running TypeScript ...\n\n  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.\n  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n\n  \t- incremental was set to true\n  \t- include was updated to add '.next/dev/types/**/*.ts'\n\n  Finished TypeScript in 929ms ...\n  Collecting page data using 2 workers ...\n  Generating static pages using 2 workers (0/1) ...\n\u2713 Generating static pages using 2 workers (1/1) in 176ms\n  Finalizing page optimization ...\n  Collecting build traces ...\n\n\nRoute (pages)\n\u2500 \u25cb /404\n\n\u25cb  (Static)  prerendered as static content\n\n"
+    },
+    {
+      "commandSha256": "ea50dd2d7e2ba9090353dae1647f07af341ebcd90f29697b92859d0357b2631a",
+      "shellExitCode": 0,
+      "completedProductionBuildInOutput": true,
+      "outputTail": "\u25b2 Next.js 16.4.5 (webpack)\n\u2713 Running next.config.ts took 16ms\n\n  Creating an optimized production build ...\n\u2713 Compiled successfully in 1451ms\n  Running TypeScript ...\n  Finished TypeScript in 1078ms ...\n  Collecting page data using 7 workers ...\n  Generating static pages using 7 workers (0/5) ...\n  Generating static pages using 7 workers (1/5) \r\n  Generating static pages using 7 workers (2/5) \r\n  Generating static pages using 7 workers (3/5) \r\n\u2713 Generating static pages using 7 workers (5/5) in 83ms\n  Finalizing page optimization ...\n  Collecting build traces ...\n\nRoute (app)\n\u250c \u0192 /\n\u251c \u25cb /_not-found\n\u251c \u0192 /api/plans\n\u251c \u0192 /api/plans/[id]\n\u251c \u0192 /api/quote\n\u251c \u0192 /api/quotes/[id]\n\u2514 \u25cb /quote\n\n\n\u25cb  (Static)   prerendered as static content\n\u0192  (Dynamic)  server-rendered on demand\n\n"
+    },
+    {
+      "commandSha256": "7dadafa6251fd289811464c0faf95424b3326d0a8007d260d1c4ef52458d2208",
+      "shellExitCode": 0,
+      "completedProductionBuildInOutput": true,
+      "outputTail": "\n> reconstructed-app@1.0.0 build\n> next build --webpack\n\n\u25b2 Next.js 16.4.5 (webpack)\n\u2713 Running next.config.ts took 16ms\n\n  Creating an optimized production build ...\n\u2713 Compiled successfully in 697ms\n  Running TypeScript ...\n  Finished TypeScript in 667ms ...\n  Collecting page data using 7 workers ...\n  Generating static pages using 7 workers (0/5) ...\n  Generating static pages using 7 workers (1/5) \r\n  Generating static pages using 7 workers (2/5) \r\n  Generating static pages using 7 workers (3/5) \r\n\u2713 Generating static pages using 7 workers (5/5) in 79ms\n  Finalizing page optimization ...\n  Collecting build traces ...\n\nRoute (app)\n\u250c \u0192 /\n\u251c \u25cb /_not-found\n\u251c \u0192 /api/plans\n\u251c \u0192 /api/plans/[id]\n\u251c \u0192 /api/quote\n\u251c \u0192 /api/quotes/[id]\n\u2514 \u25cb /quote\n\n\n\u25cb  (Static)   prerendered as static content\n\u0192  (Dynamic)  server-rendered on demand\n\n"
+    },
+    {
+      "commandSha256": "1190567481bd936f21782d657c841a5869bc75a95ab7507e062f3c9ab27d0b3e",
+      "shellExitCode": 0,
+      "completedProductionBuildInOutput": false,
+      "outputTail": "Success. Updated the following files:\nA report.md\nA app/README.md\n\n--- FINAL EVIDENCE ---\n(node:59750) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nPASS: 73 HTTP checks; exact default/bridge/urgent plans, validation, transaction rollback/conflicts, idempotency, remaining batch, quote formulas, holidays, expiry, and SQLite rows.\nPASS: 15 browser flows; desktop/mobile screenshots saved; no uncaught browser errors.\nPASS: new production server process restores committed plan, two activity events, booked quote, saved-page query, and byte-equivalent idempotent retry from separate SQLite files.\n\n--- SERVER STATUS ---\n\n--- APP FILES ---\napp/src/app/DispatchBoard.jsx\napp/src/app/api/plans/[id]/route.js\napp/src/app/api/plans/route.js\napp/src/app/api/quote/route.js\napp/src/app/api/quotes/[id]/route.js\napp/src/app/globals.css\napp/src/app/layout.tsx\napp/src/app/page.tsx\napp/src/app/quote/page.jsx\napp/src/lib/fixture.json\napp/src/lib/http.js\napp/src/lib/planner.js\napp/src/lib/quote.js\napp/src/lib/storage.js\n\n--- NO COMPILED-INPUT RUNTIME REFERENCES ---\n\n--- TIME ---\n04:13:46\n"
+    }
+  ],
+  "sourceReview": "Independent reconstructed modules. No supplied artifact imports/execution or original API proxy found in source; production outbound restricted to own port.",
+  "inTrialNodeVersion": "v24.13.1",
+  "nodeLimitation": "Shell resolved an earlier Node 24 patch than REA package support; matched post-submission scans on explicit 24.22.2 are recorded separately."
+}

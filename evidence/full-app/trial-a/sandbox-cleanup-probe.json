@@ -1,0 +1,7 @@
+{
+  "probe": "ps -A -o pid=; stdout discarded, no process data retained",
+  "outsideExitCode": 0,
+  "insideExitCode": 71,
+  "insideStderr": "sandbox-exec: execvp() of '/bin/ps' failed: Operation not permitted",
+  "supports": "Process-table access is denied by the reconstruction sandbox; this is shared by both arms."
+}

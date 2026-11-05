@@ -1,0 +1,23 @@
+{
+  "trial": "trial-b",
+  "variant": "after",
+  "startedAt": "2026-11-05T22:43:56.003Z",
+  "endedAt": "2026-11-05T22:52:47.352Z",
+  "milliseconds": 531348,
+  "timedOut": false,
+  "status": {
+    "code": 0,
+    "signal": null
+  },
+  "usage": {
+    "input_tokens": 5672423,
+    "cached_input_tokens": 5529911,
+    "cache_write_input_tokens": 142323,
+    "output_tokens": 37934,
+    "reasoning_output_tokens": 8084
+  },
+  "requestedModel": "gpt-6.1-sol",
+  "reasoningEffort": "high",
+  "commands": 44,
+  "note": "First final app is frozen before external tests. Requested model alias is not independently attested backend identity."
+}

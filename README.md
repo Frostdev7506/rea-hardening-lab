@@ -2,6 +2,8 @@
 
 A full-stack Next.js application for testing a specific question: **can a model-assisted analyst recover exact behavior from a compiled app after `die-a-rea` hardening, and how much effort does it take?**
 
+**Latest full-app follow-up:** the reconstruction from original artifacts matched **312/312** dispatch cases in **7:14**; the protected-artifact reconstruction matched **258/312** in **8:51**. Both launched and passed the other 84 selected HTTP/state checks, but the protected clone's optimizer returned 54 suboptimal plans. One attempt per build; common REA sandbox/Node limitations are disclosed. See the [full-app evidence and runnable submissions](evidence/full-app/README.md). The earlier six planner-only attempts below remain a separate evaluation.
+
 ## Current app: Dispatch Lab (V2)
 
 The home page is now a working dispatch planner: **eight locations, twelve roads, three different couriers, six shipments and an optional urgent delivery**. It computes routes and fleet assignments together, respecting capacity, delivery windows, service time, refrigeration, battery certification, bike-only roads and the return journey. Drafts and dispatches persist in SQLite; transactional reservations prevent competing plans from double-booking a shipment or courier.

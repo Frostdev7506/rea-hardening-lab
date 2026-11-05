@@ -1,0 +1,36 @@
+{
+  "purpose": "Post-submission diagnosis only. Original candidate bytes and official score remain unchanged; the repaired function is never counted as a successful recovery.",
+  "finding": "The recovered optimizer compares candidate total cost with incumbent penalty alone, over-prunes by incumbent penalty, and ties against a constant. The actual original compares incumbent total and signature.",
+  "replacements": [
+    [
+      "penalty > best.penalty",
+      "penalty > best.cost + best.penalty"
+    ],
+    [
+      "cost + penalty < best.penalty",
+      "cost + penalty < best.cost + best.penalty"
+    ],
+    [
+      "cost + penalty === best.penalty",
+      "cost + penalty === best.cost + best.penalty"
+    ],
+    [
+      "signature < '~'",
+      "signature < best.signature"
+    ]
+  ],
+  "results": {
+    "submitted": {
+      "sourceSha256": "390097d62481a381134e0ca4795d9cc042fbd79ef941b0b6400eb8867828b287",
+      "exact": 258,
+      "semantic": 258,
+      "cases": 312
+    },
+    "diagnosticOnly": {
+      "sourceSha256": "6dccadf3b159ff6fccc99e80ba3b2e7111953973ee8b0d6d22d8f888e060c004",
+      "exact": 312,
+      "semantic": 312,
+      "cases": 312
+    }
+  }
+}

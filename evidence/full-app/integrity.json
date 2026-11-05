@@ -1,0 +1,216 @@
+{
+  "referenceSha256": "23441b14e5453fb4614686bf7abaeb300b871faa885d667718e0fe143976b3e9",
+  "inputs": {
+    "trial-a": {
+      "15b69f71f8393177.css": {
+        "sha256": "b344c2ffdf15d3a2a474170995b0e61d93296e0c5eda18f7e58ec0ac6e834dad",
+        "bytes": 8797,
+        "snapshot": "inputs/15b69f71f8393177.css.gz"
+      },
+      "71cfcc1f7c4648ac.css": {
+        "sha256": "c18f9968615d87ec91f04a64efdfb6cf399d69895d2b0a57b379d82f7591853d",
+        "bytes": 3904,
+        "snapshot": "inputs/71cfcc1f7c4648ac.css.gz"
+      },
+      "brief.md": {
+        "sha256": "6e5909c90bb0c0c0b564d5c30e33154e29a72075bf3b7893901520fb3c026ff5",
+        "bytes": 1431,
+        "snapshot": "inputs/brief.md.gz"
+      },
+      "browser.js": {
+        "sha256": "51b7458313603b910c9d4fa6cf87cd146a87638b883af02074e600d5c15cdd9c",
+        "bytes": 14199,
+        "snapshot": "inputs/browser.js.gz"
+      },
+      "dispatch-desktop.png": {
+        "sha256": "fae728bb5e44806c166f2e926a4425abea6691fe04159469a9889135d82f4a7c",
+        "bytes": 170361,
+        "snapshot": "inputs/dispatch-desktop.png.gz"
+      },
+      "dispatch-mobile.png": {
+        "sha256": "f97a2f2518e1c77d2f4a7d1be587247ebce665a1ab4ee439839b3d9d099cc7a4",
+        "bytes": 114805,
+        "snapshot": "inputs/dispatch-mobile.png.gz"
+      },
+      "dispatch-urgent.png": {
+        "sha256": "b7c2db1eb5aee37a7d52c6c31d5fc4a2ef0e3ec42590442559fc93ea9203399a",
+        "bytes": 178079,
+        "snapshot": "inputs/dispatch-urgent.png.gz"
+      },
+      "page.js": {
+        "sha256": "16dc7bdae8c6d2e0effb25b36e1a1c198778dbfe2dc3dbb0f1d54e286d6d01a4",
+        "bytes": 32156,
+        "snapshot": "inputs/page.js.gz"
+      },
+      "persistence.js": {
+        "sha256": "044bff8a766dfb9e28ba2cc7f10f2eaa7dcbb2a2195bb790e3299ea04cf81df4",
+        "bytes": 16617,
+        "snapshot": "inputs/persistence.js.gz"
+      },
+      "planner.js": {
+        "sha256": "d0c8cc359a5c51e01287834571ef991551083ccd0c5be1bf2a09ef28e92a0920",
+        "bytes": 20211,
+        "snapshot": "inputs/planner.js.gz"
+      },
+      "quote-api.js": {
+        "sha256": "4328dace445d17d7a49762297c08ac79d689c85b77d99a8067019ffde0c6cc20",
+        "bytes": 14599,
+        "snapshot": "inputs/quote-api.js.gz"
+      },
+      "quote-browser.js": {
+        "sha256": "b4c70862795f39c39bdb64fbf393b46808d15002a378a551b33a3e3a59ad525c",
+        "bytes": 7894,
+        "snapshot": "inputs/quote-browser.js.gz"
+      },
+      "quote-page.js": {
+        "sha256": "5edc898b9e7568d19dd3dce68de45ba8b639eb0410547f95d201dd72d8ba1214",
+        "bytes": 13786,
+        "snapshot": "inputs/quote-page.js.gz"
+      },
+      "quote-record-api.js": {
+        "sha256": "8e57ae04455407f620e866bc79041f1618df9eed47b27d728dae4ca0cedeceb1",
+        "bytes": 10652,
+        "snapshot": "inputs/quote-record-api.js.gz"
+      },
+      "quote-reference.png": {
+        "sha256": "c5b0c9336de98ac44913592636fcdc8d5a52354a82e2933866989600ad20a5cc",
+        "bytes": 98261,
+        "snapshot": "inputs/quote-reference.png.gz"
+      }
+    },
+    "trial-b": {
+      "15b69f71f8393177.css": {
+        "sha256": "b344c2ffdf15d3a2a474170995b0e61d93296e0c5eda18f7e58ec0ac6e834dad",
+        "bytes": 8797,
+        "snapshot": "inputs/15b69f71f8393177.css.gz"
+      },
+      "71cfcc1f7c4648ac.css": {
+        "sha256": "c18f9968615d87ec91f04a64efdfb6cf399d69895d2b0a57b379d82f7591853d",
+        "bytes": 3904,
+        "snapshot": "inputs/71cfcc1f7c4648ac.css.gz"
+      },
+      "brief.md": {
+        "sha256": "6e5909c90bb0c0c0b564d5c30e33154e29a72075bf3b7893901520fb3c026ff5",
+        "bytes": 1431,
+        "snapshot": "inputs/brief.md.gz"
+      },
+      "browser.js": {
+        "sha256": "40aba671ae135929b664c860dfa65a8736f2b62aa34dd7fd7be192b3058ff37d",
+        "bytes": 184572,
+        "snapshot": "inputs/browser.js.gz"
+      },
+      "dispatch-desktop.png": {
+        "sha256": "fae728bb5e44806c166f2e926a4425abea6691fe04159469a9889135d82f4a7c",
+        "bytes": 170361,
+        "snapshot": "inputs/dispatch-desktop.png.gz"
+      },
+      "dispatch-mobile.png": {
+        "sha256": "f97a2f2518e1c77d2f4a7d1be587247ebce665a1ab4ee439839b3d9d099cc7a4",
+        "bytes": 114805,
+        "snapshot": "inputs/dispatch-mobile.png.gz"
+      },
+      "dispatch-urgent.png": {
+        "sha256": "b7c2db1eb5aee37a7d52c6c31d5fc4a2ef0e3ec42590442559fc93ea9203399a",
+        "bytes": 178079,
+        "snapshot": "inputs/dispatch-urgent.png.gz"
+      },
+      "page.js": {
+        "sha256": "db4b0599c96c22146b6dfc32ee72cbd62468f112356e4b0a3f703a989e4363b2",
+        "bytes": 231546,
+        "snapshot": "inputs/page.js.gz"
+      },
+      "persistence.js": {
+        "sha256": "7af1a3e07d1133d92379737f5595ad69e5cc88c51b008d097c47e2ae194e01fb",
+        "bytes": 193804,
+        "snapshot": "inputs/persistence.js.gz"
+      },
+      "planner.js": {
+        "sha256": "f5dcfa03a4143fb7b6aa81d9b40dcb622ce9e7493f75fe695f7360e1210ac01c",
+        "bytes": 204258,
+        "snapshot": "inputs/planner.js.gz"
+      },
+      "quote-api.js": {
+        "sha256": "4328dace445d17d7a49762297c08ac79d689c85b77d99a8067019ffde0c6cc20",
+        "bytes": 14599,
+        "snapshot": "inputs/quote-api.js.gz"
+      },
+      "quote-browser.js": {
+        "sha256": "b4c70862795f39c39bdb64fbf393b46808d15002a378a551b33a3e3a59ad525c",
+        "bytes": 7894,
+        "snapshot": "inputs/quote-browser.js.gz"
+      },
+      "quote-page.js": {
+        "sha256": "5edc898b9e7568d19dd3dce68de45ba8b639eb0410547f95d201dd72d8ba1214",
+        "bytes": 13786,
+        "snapshot": "inputs/quote-page.js.gz"
+      },
+      "quote-record-api.js": {
+        "sha256": "8e57ae04455407f620e866bc79041f1618df9eed47b27d728dae4ca0cedeceb1",
+        "bytes": 10652,
+        "snapshot": "inputs/quote-record-api.js.gz"
+      },
+      "quote-reference.png": {
+        "sha256": "c5b0c9336de98ac44913592636fcdc8d5a52354a82e2933866989600ad20a5cc",
+        "bytes": 98261,
+        "snapshot": "inputs/quote-reference.png.gz"
+      }
+    }
+  },
+  "submissions": {
+    "trial-a": {
+      "files": {
+        "next-env.d.ts": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b",
+        "README.md": "c76a2eaab8ba3f3f10f6c202a2adde04ccccf1e784fcbd51badee0e7dc913cf2",
+        "package.json": "4b7b486b06efc239a92f09e27bf7459bd6a799f9d05a2276cf4fcf5b3461a2e1",
+        "tsconfig.json": "aa24b4c043cc094a823ecb8f1f8dcde596d14bbb8d34058bc57f2ea61f377382",
+        "next.config.ts": "9178c08f680e42a9964cf977d081de06399f980777b6acdcd8098c647317ee45",
+        "src/app/DispatchBoard.jsx": "2ac2cf15cb57de786652316dcac12e4af0c76196961b7894351bcfe27050bb7a",
+        "src/app/layout.tsx": "9cead52004d94181c7030e30a9a76deb9236a37dcc6a51cd02b51acdb569d511",
+        "src/app/page.tsx": "69b61ad81745cc0a911d2a07534e1590669deaa3837bbaccf4df39640edb722e",
+        "src/app/globals.css": "a4b9fc00e45aaa01db27c89928df9fd0ae8f3cb06663b428cf48bc458393f8fb",
+        "src/lib/fixture.json": "b6049e61d39790648ee1106623799007ec21e14f897ed8a38fc6fee2d90a618a",
+        "src/lib/quote.js": "2b3205b4272a02648c856d8a19818d1c75f32ced6de881e652b821ef17c02134",
+        "src/lib/planner.js": "c6cec7aa9ddaf412bd84410a93e7554137ad6e12e3c7d8aa6c8bb6f8cba26d7d",
+        "src/lib/http.js": "64d8d03766f2c19344cecd258fb8b7f473faca5ff2b03e349a6f9fbcb1062bbf",
+        "src/lib/storage.js": "72e99ba22ac72aadd306e229b9dae51b16bf67bdb0bdb4b2653e18009aa2ba72",
+        "src/app/quote/page.jsx": "0b23fd85f32bdaaa8fe136ea60025c1c009a6cb376a0f0f6ff8bc697dd46df1d",
+        "src/app/api/plans/route.js": "b78ab69ebed9cbd537725966f99d7e6927583b5466192e4d2791f0e744faa7c1",
+        "src/app/api/quote/route.js": "564f04e7f50f3912ca34d59601adc118550da2af18322f6e01407f2ec1b0b6a2",
+        "src/app/api/quotes/[id]/route.js": "1a93f895887fba0cb7bce769b0af48d7100fa32d7c21c996be4ccf61b2280053",
+        "src/app/api/plans/[id]/route.js": "887295550faad2e24af1ea702b32fe5957fede2df44113273eb0bdef6fee3256"
+      },
+      "treeSha256": "dbba299d2bd84ca6dedba528c1b56123b3fdaf74fa9caab4c93e4d97dc6c0d16",
+      "matchesPrivateFirstFinal": true
+    },
+    "trial-b": {
+      "files": {
+        "next-env.d.ts": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b",
+        "package.json": "4b7b486b06efc239a92f09e27bf7459bd6a799f9d05a2276cf4fcf5b3461a2e1",
+        "tsconfig.json": "aa24b4c043cc094a823ecb8f1f8dcde596d14bbb8d34058bc57f2ea61f377382",
+        "next.config.ts": "9178c08f680e42a9964cf977d081de06399f980777b6acdcd8098c647317ee45",
+        "src/app/page.jsx": "4b835107a94d859f36cf82c046c1bb555644aa1ed8e08392e8c0b52316c79390",
+        "src/app/dispatch-board.jsx": "6106b712da16819b31aea861a8309c74eaecde67243532359b5849ff7b4292ec",
+        "src/app/layout.tsx": "5ec79c4732558695892caf767cb60e12d50dcf2fbd312424b35dc86ee25b88de",
+        "src/app/globals.css": "a4b9fc00e45aaa01db27c89928df9fd0ae8f3cb06663b428cf48bc458393f8fb",
+        "src/lib/fixture.json": "b6049e61d39790648ee1106623799007ec21e14f897ed8a38fc6fee2d90a618a",
+        "src/lib/quote.js": "103bf308dcd8aef09c8c4ef35d0514a7ce84d215888837d3594db7cc442896cd",
+        "src/lib/planner.js": "390097d62481a381134e0ca4795d9cc042fbd79ef941b0b6400eb8867828b287",
+        "src/lib/store.js": "e5d4303e2bb24b3df9ca5cb717f8deb64a00c690b5a9fb157aa59343db299093",
+        "src/lib/requests.js": "38b656e11d90f79eb701a6d1e2eaed72200f36d6c652f1a397f1f8733726af85",
+        "src/app/quote/page.jsx": "6bb6b52539a165f271248312c83c8c181574481dbd08451ad20da7c9c54fb358",
+        "src/app/quote/quote-form.jsx": "ec6389981e7b72d780d7092ef79e66a28ce246be1bc95d0d039539227490974e",
+        "src/app/api/plans/route.js": "45cea19962dcd1340bd9d4b4f7ee918fd047cdc89432f5625a95392d9f86a213",
+        "src/app/api/quote/route.js": "eeafca45641853fbe4ec62ad9d8df07c7eabf66fd9647d2bafb3122451419e2f",
+        "src/app/api/quotes/[id]/route.js": "74082f802739e1b2537e98c6c04fbbcf99f0d83b2249b42d54c982a4f5ce24ad",
+        "src/app/api/plans/[id]/route.js": "228c635ea0f478d247445ba36031404d8e5a39463569adcbb404dd85a74112ed"
+      },
+      "treeSha256": "b628a39329c5bfb7df1fe675b4e7d75dc3d82c668983ccf25de1d30d33f563d7",
+      "matchesPrivateFirstFinal": true
+    }
+  },
+  "notes": [
+    "Post-submission manifest verified against first-final copies. Private reasoning logs are not published.",
+    "Exact raw reference bytes were retained, not reformatted."
+  ],
+  "onlyFourPrimaryInputsDiffer": true
+}

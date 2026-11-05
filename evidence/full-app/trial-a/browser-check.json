@@ -1,0 +1,30 @@
+{
+  "trial": "trial-a",
+  "variant": "before",
+  "origin": "http://127.0.0.1:4371",
+  "passed": true,
+  "checks": [
+    "Initial dispatch controls and shipment queue render.",
+    "Full-fleet plan displays 6/6 and $54.83.",
+    "Sprinter route filter changes the SVG from three route polylines to one.",
+    "Changed constraints invalidate the stale plan.",
+    "Bridge closure replans to $62.03 and Sprinter returns at 11:00.",
+    "Urgent kit produces 6/7, $149.37 and P106 unassigned.",
+    "Commit confirms dispatch and disables used couriers.",
+    "Committed plan URL restores after reload.",
+    "New batch resets to six waiting shipments.",
+    "Removing Coldbox gives 4/6 and $180 missed-service penalty.",
+    "390px layout has documentWidth=viewportWidth=390.",
+    "Quote page defaults produce $12.75 with dispatch Nov6/delivery Nov12.",
+    "Booking shows Reserved and disables the button."
+  ],
+  "minorDifferences": [
+    {
+      "feature": "Legacy quote brand anchor",
+      "original": "#quote-form",
+      "reconstruction": "#main-content",
+      "impact": "The brand link scrolls to a different section; calculation and booking are unaffected."
+    }
+  ],
+  "limits": "Parent Chrome functional checks, not exhaustive browser coverage or pixel-diff certification. Original public CSS and reference screenshots were supplied to both recovery trials. API, persistence and expiry checks are independent records."
+}

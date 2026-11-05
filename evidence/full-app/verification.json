@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-06",
+  "labTests": {
+    "passed": 22,
+    "failed": 0
+  },
+  "lint": "pass",
+  "build": "pass",
+  "typecheck": "pass",
+  "sourceAndInputHashes": "pass",
+  "primaryHttpAndSemantic": {
+    "trial-a": "312/312",
+    "trial-b": "258/312"
+  },
+  "httpAndStateTotals": {
+    "trial-a": "396/396",
+    "trial-b": "342/396"
+  },
+  "replayExitCodes": {
+    "trial-a": 0,
+    "trial-b": 1
+  },
+  "negativeControl": "Deliberately incremented objective is rejected by exact and independent semantic checks.",
+  "diagnosticOnly": "Cost-bound substitutions match 312/312 without changing the first-final source."
+}

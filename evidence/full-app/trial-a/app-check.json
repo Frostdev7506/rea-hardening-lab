@@ -1,0 +1,2024 @@
+{
+  "trial": "trial-a",
+  "variant": "before",
+  "ready": true,
+  "referenceSha256": "23441b14e5453fb4614686bf7abaeb300b871faa885d667718e0fe143976b3e9",
+  "categories": {
+    "dispatch-exact": {
+      "total": 312,
+      "passed": 312
+    },
+    "dispatch-validation": {
+      "total": 23,
+      "passed": 23
+    },
+    "legacy-quote": {
+      "total": 42,
+      "passed": 42
+    },
+    "dispatch-workflow": {
+      "total": 7,
+      "passed": 7
+    },
+    "legacy-workflow": {
+      "total": 3,
+      "passed": 3
+    },
+    "durability": {
+      "total": 3,
+      "passed": 3
+    },
+    "legacy-validation": {
+      "total": 6,
+      "passed": 6
+    }
+  },
+  "dispatchSemantic": {
+    "total": 312,
+    "passed": 312
+  },
+  "results": [
+    {
+      "category": "dispatch-exact",
+      "name": "app-1",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-2",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-3",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-4",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-5",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-6",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-7",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-8",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-9",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-10",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-11",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-12",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-13",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-14",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-15",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-16",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-17",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-18",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-19",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-20",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-21",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-22",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-23",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-24",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-25",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-26",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-27",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-28",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-29",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-30",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-31",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-32",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-33",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-34",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-35",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-36",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-37",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-38",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-39",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-40",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-41",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-42",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-43",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-44",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-45",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-46",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-47",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-48",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-49",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-50",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-51",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-52",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-53",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-54",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-55",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-56",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-57",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-58",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-59",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-60",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-61",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-62",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-63",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-64",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-65",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-66",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-67",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-68",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-69",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-70",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-71",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-72",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-73",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-74",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-75",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-76",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-77",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-78",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-79",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-80",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-81",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-82",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-83",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-84",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-85",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-86",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-87",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-88",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-89",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-90",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-91",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-92",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-93",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-94",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-95",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-96",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-97",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-98",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-99",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-100",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-101",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-102",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-103",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-104",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-105",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-106",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-107",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-108",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-109",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-110",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-111",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-112",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-113",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-114",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-115",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-116",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-117",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-118",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-119",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-120",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-121",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-122",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-123",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-124",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-125",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-126",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-127",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-128",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-129",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-130",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-131",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-132",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-133",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-134",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-135",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-136",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-137",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-138",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-139",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-140",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-141",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-142",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-143",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-144",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-145",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-146",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-147",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-148",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-149",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-150",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-151",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-152",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-153",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-154",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-155",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-156",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-157",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-158",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-159",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-160",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-161",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-162",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-163",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-164",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-165",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-166",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-167",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-168",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-169",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-170",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-171",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-172",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-173",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-174",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-175",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-176",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-177",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-178",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-179",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-180",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-181",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-182",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-183",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-184",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-185",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-186",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-187",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-188",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-189",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-190",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-191",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-192",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-193",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-194",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-195",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-196",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-197",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-198",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-199",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-200",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-201",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-202",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-203",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-204",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-205",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-206",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-207",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-208",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-209",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-210",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-211",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-212",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-213",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-214",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-215",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-216",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-217",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-218",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-219",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-220",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-221",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-222",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-223",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-224",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-225",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-226",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-227",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-228",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-229",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-230",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-231",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-232",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-233",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-234",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-235",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-236",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-237",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-238",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-239",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-240",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-241",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-242",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-243",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-244",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-245",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-246",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-247",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-248",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-249",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-250",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-251",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-252",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-253",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-254",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-255",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-256",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-257",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-258",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-259",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-260",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-261",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-262",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-263",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-264",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-265",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-266",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-267",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-268",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-269",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-270",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-271",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-272",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-273",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-274",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-275",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-276",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-277",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-278",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-279",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-280",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-281",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-282",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-283",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-284",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-285",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-286",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-287",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-288",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-289",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-290",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-291",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-292",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-293",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-294",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-295",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-296",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-297",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-298",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-299",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-300",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-301",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-302",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-303",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-304",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-305",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-306",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-307",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-308",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-309",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-310",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-311",
+      "passed": true
+    },
+    {
+      "category": "dispatch-exact",
+      "name": "app-312",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "malformed-json",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "null",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "array",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "empty",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "bad-batch",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "forged-price",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "unknown-road",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "duplicate-courier",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "unknown-courier",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "float-time",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "early-time",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "late-time",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "string-urgent",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "unknown-scenario-field",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "oversized",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "unicode-byte-limit",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "wrong-content-type",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "missing-GET-invalid",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "missing-POST-invalid",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "missing-GET-uuid",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "missing-POST-uuid",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "missing-GET-uuid",
+      "passed": true
+    },
+    {
+      "category": "dispatch-validation",
+      "name": "missing-POST-uuid",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-01",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-02",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-03",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-04",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-05",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-06",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-07",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-08",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-09",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-10",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-11",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-12",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-13",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-14",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-15",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-16",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-17",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-18",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-19",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-20",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-21",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-22",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-23",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-24",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-25",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-26",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-27",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-28",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-29",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-30",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-31",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-32",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-33",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-34",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-35",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-36",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-37",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-38",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-39",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-40",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-41",
+      "passed": true
+    },
+    {
+      "category": "legacy-quote",
+      "name": "case-42",
+      "passed": true
+    },
+    {
+      "category": "dispatch-workflow",
+      "name": "save-read-commit-idempotent",
+      "passed": true
+    },
+    {
+      "category": "dispatch-workflow",
+      "name": "saved-query-restores-server-rendered-plan",
+      "passed": true
+    },
+    {
+      "category": "dispatch-workflow",
+      "name": "replan-excludes-reservations-and-new-urgent-cannot-reuse-courier",
+      "passed": true
+    },
+    {
+      "category": "dispatch-workflow",
+      "name": "competing-drafts-conflict-and-loser-is-unchanged",
+      "passed": true
+    },
+    {
+      "category": "dispatch-workflow",
+      "name": "disjoint-shipments-same-courier-conflict",
+      "passed": true
+    },
+    {
+      "category": "dispatch-workflow",
+      "name": "empty-plan-cannot-commit",
+      "passed": true
+    },
+    {
+      "category": "dispatch-workflow",
+      "name": "simultaneous-retries-create-one-event",
+      "passed": true
+    },
+    {
+      "category": "legacy-workflow",
+      "name": "quote-save-read-book-retry",
+      "passed": true
+    },
+    {
+      "category": "durability",
+      "name": "both-apps-restart-with-same-database",
+      "passed": true
+    },
+    {
+      "category": "durability",
+      "name": "dispatch-record-survives-restart-in-sqlite",
+      "passed": true
+    },
+    {
+      "category": "legacy-workflow",
+      "name": "quote-record-survives-restart-in-sqlite",
+      "passed": true
+    },
+    {
+      "category": "durability",
+      "name": "restart-preserves-reservations-and-commit-idempotency",
+      "passed": true
+    },
+    {
+      "category": "legacy-validation",
+      "name": "malformed",
+      "passed": true
+    },
+    {
+      "category": "legacy-validation",
+      "name": "forged-price",
+      "passed": true
+    },
+    {
+      "category": "legacy-validation",
+      "name": "oversized",
+      "passed": true
+    },
+    {
+      "category": "legacy-validation",
+      "name": "wrong-media",
+      "passed": true
+    },
+    {
+      "category": "legacy-validation",
+      "name": "missing-GET",
+      "passed": true
+    },
+    {
+      "category": "legacy-validation",
+      "name": "missing-POST",
+      "passed": true
+    },
+    {
+      "category": "legacy-workflow",
+      "name": "expiry-rejects-unbooked-and-preserves-booked-retries",
+      "passed": true
+    }
+  ],
+  "semanticFailures": [],
+  "scope": "Live reconstructed production server compared against original. Exact checks normalize only validated random IDs/timestamps; semantic planner checks separately accept tied optima. Browser checks recorded separately. One reconstruction attempt per variant; no feedback/repairs."
+}

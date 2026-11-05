@@ -1,0 +1,49 @@
+{
+  "failedCases": 54,
+  "uiReachableFrozenFailures": [
+    {
+      "id": "app-97",
+      "scenario": {
+        "disabledCouriers": [],
+        "closedRoads": [],
+        "startMinute": 570,
+        "urgent": false
+      },
+      "originalObjectiveCents": 26087
+    },
+    {
+      "id": "app-99",
+      "scenario": {
+        "disabledCouriers": [
+          "coldbox"
+        ],
+        "closedRoads": [],
+        "startMinute": 570,
+        "urgent": false
+      },
+      "originalObjectiveCents": 32248
+    },
+    {
+      "id": "app-105",
+      "scenario": {
+        "disabledCouriers": [],
+        "closedRoads": [],
+        "startMinute": 570,
+        "urgent": true
+      },
+      "originalObjectiveCents": 48087
+    },
+    {
+      "id": "app-107",
+      "scenario": {
+        "disabledCouriers": [
+          "coldbox"
+        ],
+        "closedRoads": [],
+        "startMinute": 570,
+        "urgent": true
+      },
+      "originalObjectiveCents": 54248
+    }
+  ]
+}

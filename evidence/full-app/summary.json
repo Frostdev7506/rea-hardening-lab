@@ -1,0 +1,62 @@
+{
+  "experiment": "One fresh REA-assisted full-app reconstruction per build; separate from six planner-only V2 trials.",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "trial": "trial-a",
+      "variant": "before",
+      "dispatchExact": {
+        "total": 312,
+        "passed": 312
+      },
+      "dispatchSemantic": {
+        "total": 312,
+        "passed": 312
+      },
+      "otherChecks": {
+        "passed": 84,
+        "total": 84
+      },
+      "elapsedMilliseconds": 433560,
+      "uncachedInputTokens": 114504,
+      "outputTokens": 33591,
+      "timedOut": false
+    },
+    {
+      "trial": "trial-b",
+      "variant": "after",
+      "dispatchExact": {
+        "total": 312,
+        "passed": 258
+      },
+      "dispatchSemantic": {
+        "total": 312,
+        "passed": 258
+      },
+      "otherChecks": {
+        "passed": 84,
+        "total": 84
+      },
+      "elapsedMilliseconds": 531348,
+      "uncachedInputTokens": 142512,
+      "outputTokens": 37934,
+      "timedOut": false
+    }
+  ],
+  "observedEffortChangePercent": {
+    "time": 22.555,
+    "uncachedInput": 24.46,
+    "output": 12.929
+  },
+  "verdict": "The protected first submission took longer and had 54 suboptimal plans; runnable and persistent does not establish behavioral equivalence. This single pair does not establish a general failure rate or causal mean effort increase.",
+  "control": "Original-vs-original passed 396/396; deliberate bad objective rejected by exact and semantic graders. Actual hardened original matched 312/312.",
+  "environmentLimit": "Both in-trial REA scans emitted complete JSON but exited during sandbox process-table cleanup, on unsupported Node patch 24.13.1. Post-submission scans outside sandbox with explicit Node24.22.2 exited zero for both; no feedback or revised candidates.",
+  "diagnosis": "Separate in-memory incumbent-comparison repair matches 312/312; official protected submission remains 258/312.",
+  "scope": [
+    "Static REA reports plus direct artifact inspection by an AI analyst; no REA-alone incremental comparison.",
+    "312 distinct fresh-batch plan cases plus selected persistence, conflict, validation and expiry checks; not exhaustive app proof.",
+    "Shared legacy quote feature is outside the hardening treatment.",
+    "Requested model alias matches across trials but resolved backend identity is not independently attested.",
+    "No dollar-cost or statistically established slowdown claim."
+  ]
+}
