@@ -6,8 +6,8 @@ Attempt: one model-assisted recovery attempt, with no delegated recovery agent, 
 
 The artifact restriction was an instructional limit, **not an OS sandbox**. The supplied runtime had unrestricted filesystem permissions. Application information was read only from these four permitted inputs:
 
-- [Compiled server artifact](../../evidence/artifacts/before-server.js), line 1, Webpack factory `9146`.
-- [Compiled browser artifact](../../evidence/artifacts/before-browser.js), line 1, factory `5456`.
+- [Compiled server artifact, gzip](../../evidence/artifacts/before-server.js.gz), unpacked line 1, Webpack factory `9146`.
+- [Compiled browser artifact, gzip](../../evidence/artifacts/before-browser.js.gz), unpacked line 1, factory `5456`.
 - [Server REA evidence](../../evidence/rea-server-before.json.gz), evidence `ev_7aa853d5169e8c55575b6630cbed18d6702c23540f2d975f5911284e49742a8b`.
 - [Browser REA evidence](../../evidence/rea-browser-before.json.gz), evidence `ev_8a18e119312f0f2e7b7fd9d9ba11955539988fc55a66448d8e58eb76be2ed09e`.
 

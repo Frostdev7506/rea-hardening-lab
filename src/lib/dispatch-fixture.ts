@@ -1,0 +1,51 @@
+import type { DispatchModel, PublicDispatchModel } from "./dispatch-types.ts";
+
+export const dispatchModel: DispatchModel = {
+  depot: "depot",
+  nodes: [
+    { id: "depot", name: "Depot", x: 100, y: 250 },
+    { id: "west", name: "Westgate", x: 110, y: 70 },
+    { id: "north", name: "North market", x: 360, y: 65 },
+    { id: "central", name: "Central", x: 350, y: 240 },
+    { id: "east", name: "East clinic", x: 690, y: 100 },
+    { id: "ridge", name: "Ridge", x: 690, y: 330 },
+    { id: "hospital", name: "Hospital", x: 430, y: 465 },
+    { id: "docks", name: "Docks", x: 95, y: 465 },
+  ],
+  roads: [
+    { id: "depot-west", name: "West road", from: "depot", to: "west", minutes: 12 },
+    { id: "depot-central", name: "Central avenue", from: "depot", to: "central", minutes: 14 },
+    { id: "west-north", name: "Market road", from: "west", to: "north", minutes: 16 },
+    { id: "north-central", name: "North link", from: "north", to: "central", minutes: 9 },
+    { id: "central-east", name: "Clinic avenue", from: "central", to: "east", minutes: 17 },
+    { id: "river-bridge", name: "River bridge", from: "central", to: "ridge", minutes: 8 },
+    { id: "central-hospital", name: "Hospital road", from: "central", to: "hospital", minutes: 18 },
+    { id: "hospital-ridge", name: "South bypass", from: "hospital", to: "ridge", minutes: 12 },
+    { id: "ridge-east", name: "Ridge road", from: "ridge", to: "east", minutes: 11 },
+    { id: "depot-docks", name: "Port road", from: "depot", to: "docks", minutes: 13 },
+    { id: "docks-hospital", name: "Waterfront", from: "docks", to: "hospital", minutes: 20 },
+    { id: "north-east-trail", name: "Cycle shortcut", from: "north", to: "east", minutes: 9, bikeOnly: true },
+  ],
+  couriers: [
+    { id: "sprinter", name: "Sprinter van", mode: "van", capacityKg: 18, maxStops: 4, shiftMinutes: 120, coldChain: false, batteries: true, timeFactor: 1, baseCents: 317, minuteCents: 18 },
+    { id: "coldbox", name: "Coldbox van", mode: "van", capacityKg: 10, maxStops: 3, shiftMinutes: 110, coldChain: true, batteries: false, timeFactor: 1.05, baseCents: 683, minuteCents: 23 },
+    { id: "cargo", name: "Cargo bike", mode: "bike", capacityKg: 5, maxStops: 2, shiftMinutes: 100, coldChain: false, batteries: false, timeFactor: 1.3, baseCents: 149, minuteCents: 12 },
+  ],
+  shipments: [
+    { id: "P101", name: "Studio supplies", destination: "west", weightKg: 3, readyMinute: 540, deadline: 600, serviceMinutes: 4, kind: "general", priority: "normal", penaltyCents: 5000 },
+    { id: "P102", name: "Market opening kit", destination: "north", weightKg: 2, readyMinute: 540, deadline: 580, serviceMinutes: 5, kind: "general", priority: "critical", penaltyCents: 12000 },
+    { id: "P103", name: "Clinic vaccines", destination: "east", weightKg: 4, readyMinute: 540, deadline: 630, serviceMinutes: 6, kind: "medical", priority: "high", penaltyCents: 8500 },
+    { id: "P104", name: "Battery modules", destination: "ridge", weightKg: 7, readyMinute: 540, deadline: 645, serviceMinutes: 4, kind: "battery", priority: "normal", penaltyCents: 4800 },
+    { id: "P105", name: "Docks documents", destination: "docks", weightKg: 2, readyMinute: 540, deadline: 610, serviceMinutes: 4, kind: "general", priority: "normal", penaltyCents: 4500 },
+    { id: "P106", name: "Hospital samples", destination: "hospital", weightKg: 3, readyMinute: 540, deadline: 600, serviceMinutes: 8, kind: "medical", priority: "high", penaltyCents: 9500 },
+    { id: "P107", name: "Urgent medical kit", destination: "west", weightKg: 4, readyMinute: 555, deadline: 585, serviceMinutes: 5, kind: "medical", priority: "critical", penaltyCents: 22000, optional: true },
+  ],
+};
+
+export function publicDispatchModel(): PublicDispatchModel {
+  return {
+    depot: dispatchModel.depot, nodes: dispatchModel.nodes, roads: dispatchModel.roads,
+    shipments: dispatchModel.shipments.map(({ penaltyCents: _penalty, ...shipment }) => { void _penalty; return shipment; }),
+    couriers: dispatchModel.couriers.map(({ baseCents: _base, minuteCents: _minute, timeFactor: _factor, ...courier }) => { void _base; void _minute; void _factor; return courier; }),
+  };
+}

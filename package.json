@@ -15,7 +15,9 @@
     "typecheck": "tsc --noEmit",
     "test": "node --test test/*.test.mjs",
     "test:api": "node scripts/check-api.mjs",
-    "lab": "node scripts/lab.mjs"
+    "test:dispatch": "node scripts/check-dispatch-api.mjs",
+    "lab": "node scripts/lab.mjs",
+    "evidence:unpack": "node scripts/unpack-evidence.mjs"
   },
   "dependencies": {
     "next": "16.4.5",

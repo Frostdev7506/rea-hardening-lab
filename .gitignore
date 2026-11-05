@@ -2,7 +2,8 @@ node_modules/
 .next/
 .tools/
 .data/
-artifacts/
+/artifacts/
+evidence/artifacts/*.js
 evidence/rea-*.json
 recoveries/after/server-decoded.js
 *.tsbuildinfo

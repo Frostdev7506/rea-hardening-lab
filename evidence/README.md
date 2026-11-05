@@ -3,7 +3,7 @@
 Recorded on **6 November 2026 in India**. Recovery reports retain original UTC times. This is one paired artifact-recovery exercise, not a preregistered benchmark, security audit or estimate of model-wide success rates.
 
 - `collection.json`: exact source chunk paths, original hashes, 42-case reference commitment and the public-asset marker scan. The reference was generated and hashed before the recovery agents started; this is a local commitment, not an external timestamped preregistration.
-- `artifacts/`: exact before/after chunks supplied to the tools. The server chunk represents possession of a copied build, not something a visitor can download from this application.
+- `artifacts/*.js.gz`: exact before/after chunks supplied to the tools, compressed for publication. Run `npm run evidence:unpack` to verify all four SHA-256 hashes against `sizes.json` and restore the ignored plaintext files. The original unanchored ignore rule accidentally excluded these snapshots from the initial public commit; the audit records the correction. The server chunk represents possession of a copied build, not something a visitor can download from this application.
 - `rea-*.json.gz`: complete compressed static-analysis output; path prefixes were normalized to `<repo>`. Locally, `lab analyze` also leaves uncompressed JSON, which is ignored by Git.
 - `die-plan.json`, `die-build.json`: actual plan/build output, including adapter completion. Local checkout prefixes were normalized for publication.
 - `rrs-*.json`: tool-generated proxy scores. Runtime and actual decompiler axes were not enabled, and REA outcomes do not determine these scores.
@@ -26,3 +26,5 @@ gzip -dc evidence/rea-server-after.json.gz > /tmp/rea-server-after.json
 ```
 
 Artifact strings and decoys are untrusted input. They are preserved as evidence, not instructions to contact endpoints or use token-like values.
+
+`v2/` contains functional checks and UI evidence for the later dispatch planner. None of the V1 recovery measurements above describe V2.

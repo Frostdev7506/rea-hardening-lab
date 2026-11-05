@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "origin": "http://127.0.0.1:4330",
+  "passed": true,
+  "checks": [
+    "All six shipments receive a feasible draft plan.",
+    "Closing the bridge changes routes and cost.",
+    "Removing refrigeration leaves both medical deliveries unassigned.",
+    "An urgent delivery displaces another shipment under the joint constraints.",
+    "Competing draft commits reserve each shipment once; the losing transaction conflicts.",
+    "Retrying the winning commit is idempotent, and GET restores the saved plan.",
+    "Replanning excludes reserved shipments and cannot reuse already dispatched couriers.",
+    "Disjoint shipments still conflict when their draft plans need the same physical courier.",
+    "Malformed, oversized, forged and unknown inputs are rejected; a fresh batch is independent."
+  ],
+  "scope": "Functional application checks. No version-two REA or recovery-cost result is asserted."
+}

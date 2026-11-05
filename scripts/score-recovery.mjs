@@ -8,6 +8,7 @@ const stage = process.argv[2];
 if (stage !== "before" && stage !== "after") throw new Error("Use score-recovery.mjs before|after <candidate.mjs>");
 const file = resolve(process.argv[3]);
 const recovered = await import(pathToFileURL(file).href);
+assert.equal(typeof recovered.calculateQuote, "function", "The candidate must export calculateQuote.");
 const reference = JSON.parse(await readFile("artifacts/reference.json", "utf8"));
 const commitment = JSON.parse(await readFile("evidence/collection.json", "utf8"));
 const hash = (value) => createHash("sha256").update(value).digest("hex");
@@ -24,3 +25,4 @@ const report = { stage, scope: "One source-limited agent attempt; artifact posse
 await mkdir("evidence", { recursive: true });
 await writeFile(`evidence/recovery-${stage}.json`, `${JSON.stringify(report, null, 2)}\n`);
 console.log(JSON.stringify({ stage, cases: report.cases, matched: report.matched, accepted: report.accepted, rejected: report.rejected }));
+if (report.matched !== report.cases) process.exitCode = 1;

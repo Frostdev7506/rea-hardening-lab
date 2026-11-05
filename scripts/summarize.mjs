@@ -21,6 +21,7 @@ for (const stage of ["before", "after"]) {
     await writeFile(`evidence/rea-${kind}-${stage}.json.gz`, gzipSync(raw));
     const target = kind === "browser" ? "app.js" : "engine.js";
     await cp(`artifacts/${stage === "before" ? "before" : "hardened/before"}/${kind}/${target}`, `evidence/artifacts/${stage}-${kind}.js`);
+    await writeFile(`evidence/artifacts/${stage}-${kind}.js.gz`, gzipSync(await readFile(`evidence/artifacts/${stage}-${kind}.js`)));
   }
   summary.variants[stage] = variant;
 }

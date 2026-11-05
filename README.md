@@ -1,8 +1,34 @@
 # REA hardening lab
 
-A full-stack Next.js application for testing a specific question: **can a model-assisted analyst recover the exact rules from a compiled app after `die-a-rea` hardening?**
+A full-stack Next.js application for testing a specific question: **can a model-assisted analyst recover exact behavior from a compiled app after `die-a-rea` hardening, and how much effort does it take?**
 
-**Observed result, 6 November 2026:** both independent recovery implementations matched **42/42 frozen reference cases**. The hardened build also passed the original app's API checks. This configuration obscured the code and enlarged the artifacts; it did not prevent recovery of the copied server calculation.
+## Current app: Dispatch Lab (V2)
+
+The home page is now a working dispatch planner: **eight locations, twelve roads, three different couriers, six shipments and an optional urgent delivery**. It computes routes and fleet assignments together, respecting capacity, delivery windows, service time, refrigeration, battery certification, bike-only roads and the return journey. Drafts and dispatches persist in SQLite; transactional reservations prevent competing plans from double-booking a shipment or courier.
+
+![Dispatch Lab route and fleet planner](evidence/v2/dispatch-overview.png)
+
+| Try this | Verified result |
+| --- | --- |
+| Full fleet, 09:00 | Six of six delivered; $54.83 objective |
+| Close the river bridge | Different route; six delivered; $62.03 |
+| Remove the refrigerated van | Both medical shipments unassigned |
+| Add the urgent medical kit | Six of seven delivered; P106 displaced; $149.37 including missed-service penalty |
+| Commit two competing drafts | One succeeds; the conflicting commit returns 409 |
+
+Run the commands below, then open `/` for Dispatch Lab or `/quote` for the original app. Check the running V2 API with:
+
+```sh
+npm run test:dispatch -- http://127.0.0.1:4320 evidence/v2/functional-checks.json
+```
+
+[Planner design and boundaries](docs/dispatch-planner.md) · [V2 checks and screenshots](evidence/v2/README.md) · [Review of the original experiment](docs/test-audit.md)
+
+**V2 has functional test evidence, but no REA/die-a-rea recovery result yet.** The historical measurements below apply only to V1. The original lab scripts still target the quote calculation; they are not a V2 benchmark harness.
+
+## Historical experiment: Parcel Lab (V1)
+
+**Observed result, 6 November 2026:** both independent recovery implementations matched **42/42 frozen reference cases**. The hardened build also passed the original app's API checks. This customized configuration obscured the code and enlarged the artifacts; it did not prevent recovery of the copied server calculation. **That does not establish whether die-a-rea increased recovery effort:** the run did not reliably measure tokens, cost or repeated timings, and used reduced noise with prompt gates disabled.
 
 This is one small experiment, not a general benchmark or a promise about every REA workflow. [Method and evidence](evidence/README.md) · [Machine-readable results](evidence/summary.json) · [Recovered implementations](recoveries)
 
@@ -41,7 +67,7 @@ npm run lint
 PORT=4320 HOSTNAME=127.0.0.1 npm start
 ```
 
-Open [http://127.0.0.1:4320](http://127.0.0.1:4320). In another terminal:
+Open [http://127.0.0.1:4320](http://127.0.0.1:4320) for V2. The original quote app is at [http://127.0.0.1:4320/quote](http://127.0.0.1:4320/quote). In another terminal:
 
 ```sh
 npm run test:api -- http://127.0.0.1:4320 evidence/api-before.json
@@ -52,6 +78,8 @@ The default national parcel costs **$12.75**, dispatches **2026-11-06** and arri
 `npm run dev` starts the editable development version. Experiments must use the production build, where Next.js has already minified the client code and browser source maps are disabled.
 
 ## Reproduce the REA and die-a-rea runs
+
+For the exact V1 application build, use a separate checkout at commit `a1d40a2bae3f015a32a3925d62723d3802477024`. To inspect the original supplied chunks in this current checkout, run `npm run evidence:unpack`; it verifies the four compressed snapshots against the recorded SHA-256 values. See the [audit](docs/test-audit.md) for the original scorer and publication defects corrected here.
 
 Prerequisites: Git, a supported Node version, and Rust stable with Cargo. The recorded run used macOS arm64, Node 24.22.2 and Rust 1.99.1. `npm ci` installs REA **6.8.0** and `javascript-obfuscator` **5.10.0** locally. No agent-wide REA setup or paid API key is needed for these static CLI scans.
 

@@ -1,0 +1,11 @@
+export type Depot = { id: string; name: string; x: number; y: number };
+export type Road = { id: string; name: string; from: string; to: string; minutes: number; bikeOnly?: boolean };
+export type Shipment = { id: string; name: string; destination: string; weightKg: number; readyMinute: number; deadline: number; serviceMinutes: number; kind: "general" | "medical" | "battery"; priority: "normal" | "high" | "critical"; penaltyCents: number; optional?: boolean };
+export type Courier = { id: string; name: string; mode: "van" | "bike"; capacityKg: number; maxStops: number; shiftMinutes: number; coldChain: boolean; batteries: boolean; timeFactor: number; baseCents: number; minuteCents: number };
+export type DispatchModel = { depot: string; nodes: Depot[]; roads: Road[]; shipments: Shipment[]; couriers: Courier[] };
+export type DispatchScenario = { disabledCouriers: string[]; closedRoads: string[]; startMinute: number; urgent: boolean };
+export type DispatchStop = { shipmentId: string; node: string; arrival: number; departure: number };
+export type CourierRoute = { courierId: string; shipmentIds: string[]; stops: DispatchStop[]; nodes: string[]; roadIds: string[]; loadKg: number; returnMinute: number; costCents: number };
+export type DispatchPlan = { routes: CourierRoute[]; unassigned: { shipmentId: string; reason: string }[]; delivered: number; totalShipments: number; routeCostCents: number; penaltyCents: number; objectiveCents: number };
+export type PublicDispatchModel = Omit<DispatchModel, "shipments" | "couriers"> & { shipments: Omit<Shipment, "penaltyCents">[]; couriers: Omit<Courier, "baseCents" | "minuteCents" | "timeFactor">[] };
+export type SavedDispatch = { id: string; batchId: string; state: "draft" | "committed"; createdAt: string; scenario: DispatchScenario; plan: DispatchPlan; reservedCouriers: string[]; events: { type: "planned" | "committed"; at: string }[] };
