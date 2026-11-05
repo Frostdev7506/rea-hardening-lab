@@ -1,0 +1,222 @@
+{
+  "stage": "after",
+  "scope": "One source-limited agent attempt; artifact possession, no API queries. Instructional source isolation, not an OS sandbox. Whole returned JSON compared on accepted cases; only rejection compared on ineligible cases.",
+  "referenceSha256": "c68a93dc096748f0534020ef18f575b97710b178de6e2658ddab1eb8cee2e16b",
+  "candidateSha256": "17b6a4eaa2f46deba5d4e6454d727abcc4fccb1473766b90e3be51b13a3cbcd3",
+  "cases": 42,
+  "matched": 42,
+  "accepted": 35,
+  "rejected": 7,
+  "results": [
+    {
+      "id": "case-01",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-02",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-03",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-04",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-05",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-06",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-07",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-08",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-09",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-10",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-11",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-12",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-13",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-14",
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "id": "case-15",
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "id": "case-16",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-17",
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "id": "case-18",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-19",
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "id": "case-20",
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "id": "case-21",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-22",
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "id": "case-23",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-24",
+      "rejected": true,
+      "passed": true
+    },
+    {
+      "id": "case-25",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-26",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-27",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-28",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-29",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-30",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-31",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-32",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-33",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-34",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-35",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-36",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-37",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-38",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-39",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-40",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-41",
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "id": "case-42",
+      "rejected": false,
+      "passed": true
+    }
+  ]
+}

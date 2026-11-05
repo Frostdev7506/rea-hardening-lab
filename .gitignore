@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.tools/
+.data/
+artifacts/
+evidence/rea-*.json
+recoveries/after/server-decoded.js
+*.tsbuildinfo
+.env*
+!.env.example
+.DS_Store

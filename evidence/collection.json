@@ -1,0 +1,28 @@
+{
+  "node": "v24.22.2",
+  "next": "16.4.5",
+  "rea": "6.8.0",
+  "obfuscator": "5.10.0",
+  "dieCommit": "0d322552673309372f9937bc5f0c50641ed1514e",
+  "scope": "One application browser chunk; one API route chunk representing copied server access. Neither snapshot includes source, tests, node_modules or unrelated Next runtime files.",
+  "targets": {
+    "browser": {
+      "source": ".next/static/chunks/app/page-570f9991639ce042.js",
+      "target": "before/browser/app.js",
+      "bytes": 7896,
+      "gzipBytes": 2824,
+      "sha256": "c1c6694615bc1649fd43c9399b9234ce0c2d557e4ed6b1f26149b37a6a367acd"
+    },
+    "server": {
+      "source": ".next/server/app/api/quote/route.js",
+      "target": "before/server/engine.js",
+      "bytes": 14435,
+      "gzipBytes": 6089,
+      "sha256": "3f1e45f431567754996e3decf4830906b156161db4477002401507b0fbd3f7eb"
+    }
+  },
+  "scenarioCount": 42,
+  "referenceSha256": "c68a93dc096748f0534020ef18f575b97710b178de6e2658ddab1eb8cee2e16b",
+  "publicFilesScanned": 21,
+  "leakedMarkers": []
+}

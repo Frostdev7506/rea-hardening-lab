@@ -1,0 +1,59 @@
+{
+  "milliseconds": 5,
+  "output": [
+    {
+      "target": "before/browser/app.js",
+      "kind": "javascript",
+      "steps": [
+        {
+          "adapter": "agent-canary",
+          "action": "agent-canary::plan",
+          "detail": "profile=high builtin=true available=true",
+          "external": false,
+          "destructive": false
+        },
+        {
+          "adapter": "js",
+          "action": "js::plan",
+          "detail": "profile=high builtin=false available=false",
+          "external": true,
+          "destructive": true
+        }
+      ],
+      "adapters": [
+        "agent-canary",
+        "js"
+      ],
+      "missing": [
+        "js"
+      ]
+    },
+    {
+      "target": "before/server/engine.js",
+      "kind": "javascript",
+      "steps": [
+        {
+          "adapter": "agent-canary",
+          "action": "agent-canary::plan",
+          "detail": "profile=high builtin=true available=true",
+          "external": false,
+          "destructive": false
+        },
+        {
+          "adapter": "js",
+          "action": "js::plan",
+          "detail": "profile=high builtin=false available=false",
+          "external": true,
+          "destructive": true
+        }
+      ],
+      "adapters": [
+        "agent-canary",
+        "js"
+      ],
+      "missing": [
+        "js"
+      ]
+    }
+  ]
+}

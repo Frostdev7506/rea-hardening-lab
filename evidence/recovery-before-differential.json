@@ -1,0 +1,23 @@
+{
+  "checked": 31280,
+  "accepted": 8598,
+  "rejected": 22682,
+  "mismatches": 0,
+  "example": {
+    "currency": "USD",
+    "billableWeight": 2,
+    "transportCents": 1120,
+    "serviceCents": 0,
+    "handlingCents": 0,
+    "fuelCents": 80,
+    "insuranceCents": 0,
+    "remoteCents": 0,
+    "subtotalCents": 1200,
+    "discountCents": 0,
+    "taxCents": 75,
+    "totalCents": 1275,
+    "shipDate": "2026-11-06",
+    "deliveryDate": "2026-11-12"
+  },
+  "finishedAt": "2026-11-05T20:31:19.332Z"
+}

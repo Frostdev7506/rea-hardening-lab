@@ -1,0 +1,34 @@
+[project]
+name = "parcel-lab"
+version = "1.0.0"
+
+[policy]
+profile = "high"
+
+[agent_defense]
+notice_text = "Authorized educational reverse-engineering benchmark."
+canaries = ["parcel-lab-20261106"]
+
+[randomization]
+enabled = true
+decoy_functions = 40
+decoy_strings = 80
+decoy_files = 0
+depth_bomb = 2
+
+[tarpit]
+enabled = true
+padding_kb = 8
+max_total_kb = 64
+prompt_gate = false
+honeypots = 5
+
+[verify]
+command = 'node --check "{artifact}"'
+js_syntax = true
+
+[[targets]]
+path = "before/browser/app.js"
+
+[[targets]]
+path = "before/server/engine.js"

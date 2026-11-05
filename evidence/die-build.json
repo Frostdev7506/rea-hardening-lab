@@ -1,0 +1,70 @@
+{
+  "milliseconds": 1296,
+  "output": {
+    "output_dir": "hardened",
+    "seed": 20261106,
+    "targets": [
+      {
+        "target": "before/browser/app.js",
+        "kind": "javascript",
+        "output": "hardened/before/browser/app.js",
+        "canaries": [
+          "DIREA-CANARY-parcel-lab-20261106"
+        ],
+        "actions": [
+          "strip source maps",
+          "strip full-line comments",
+          "inject authorization notice",
+          "embed 1 canary token(s)",
+          "inject 40 decoy function(s) and 80 decoy string(s)",
+          "add tarpit padding (~8 KiB, cap 64 KiB) and 5 honeypot(s)",
+          "js adapter: <die-a-rea>/adapters/js/direa-js",
+          "js: hardened/before/browser/app.js"
+        ],
+        "injected": {
+          "decoy_functions": 40,
+          "decoy_strings": 80,
+          "decoy_files": 0,
+          "injected_string_runs": 1224,
+          "depth_bytes": 1347,
+          "padding_bytes": 8198,
+          "injected_bytes": 19466
+        },
+        "noise_fraction": 0.34962372254252205
+      },
+      {
+        "target": "before/server/engine.js",
+        "kind": "javascript",
+        "output": "hardened/before/server/engine.js",
+        "canaries": [
+          "DIREA-CANARY-parcel-lab-20261106"
+        ],
+        "actions": [
+          "strip source maps",
+          "strip full-line comments",
+          "inject authorization notice",
+          "embed 1 canary token(s)",
+          "inject 40 decoy function(s) and 80 decoy string(s)",
+          "add tarpit padding (~8 KiB, cap 64 KiB) and 5 honeypot(s)",
+          "js adapter: <die-a-rea>/adapters/js/direa-js",
+          "js: hardened/before/server/engine.js"
+        ],
+        "injected": {
+          "decoy_functions": 40,
+          "decoy_strings": 80,
+          "decoy_files": 0,
+          "injected_string_runs": 1224,
+          "depth_bytes": 1347,
+          "padding_bytes": 8198,
+          "injected_bytes": 19466
+        },
+        "noise_fraction": 0.26853359084011585
+      }
+    ],
+    "notes": [
+      "js adapter: Ok — obfuscated 1 file(s)",
+      "js adapter: Ok — obfuscated 1 file(s)",
+      "wrote build metadata to hardened/die-a-rea.build.json"
+    ]
+  }
+}

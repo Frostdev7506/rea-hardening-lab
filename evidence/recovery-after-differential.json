@@ -1,0 +1,22 @@
+{
+  "checks": 148164,
+  "eligible": 66864,
+  "rejected": 81300,
+  "status": "passed",
+  "sample": {
+    "currency": "USD",
+    "billableWeight": 8,
+    "transportCents": 1623,
+    "serviceCents": 0,
+    "handlingCents": 0,
+    "fuelCents": 115,
+    "insuranceCents": 830,
+    "remoteCents": 0,
+    "subtotalCents": 2568,
+    "discountCents": 276,
+    "taxCents": 143,
+    "totalCents": 2435,
+    "shipDate": "2026-11-12",
+    "deliveryDate": "2026-11-17"
+  }
+}

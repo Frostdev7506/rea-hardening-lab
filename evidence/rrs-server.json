@@ -1,0 +1,28 @@
+{
+  "milliseconds": 4,
+  "output": {
+    "target": "before/server/engine.js",
+    "generated_unix": 1793909966,
+    "measurements": [
+      {
+        "axis": "string-exposure",
+        "baseline": 1,
+        "hardened": 0.5875
+      },
+      {
+        "axis": "analysis-noise",
+        "baseline": 1,
+        "hardened": 0.7314664091598841
+      }
+    ],
+    "rrs": 34,
+    "grade": "F",
+    "notes": [
+      "strings: 188 of 320 baseline tokens still verbatim (exposure 1.00 -> 0.59)",
+      "symbols: skipped (no baseline signal; not applicable to this target)",
+      "debug-info: skipped (no baseline signal; not applicable to this target)",
+      "source-maps: skipped (no baseline signal; not applicable to this target)",
+      "analysis-noise: 27% injected (19466 of 72490 bytes)"
+    ]
+  }
+}

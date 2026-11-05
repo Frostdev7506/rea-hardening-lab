@@ -1,0 +1,220 @@
+{
+  "origin": "http://127.0.0.1:4320",
+  "scenarioCount": 42,
+  "scenarios": [
+    {
+      "id": "case-01",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-02",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-03",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-04",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-05",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-06",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-07",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-08",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-09",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-10",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-11",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-12",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-13",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-14",
+      "status": 422,
+      "passed": true
+    },
+    {
+      "id": "case-15",
+      "status": 422,
+      "passed": true
+    },
+    {
+      "id": "case-16",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-17",
+      "status": 422,
+      "passed": true
+    },
+    {
+      "id": "case-18",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-19",
+      "status": 422,
+      "passed": true
+    },
+    {
+      "id": "case-20",
+      "status": 422,
+      "passed": true
+    },
+    {
+      "id": "case-21",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-22",
+      "status": 422,
+      "passed": true
+    },
+    {
+      "id": "case-23",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-24",
+      "status": 422,
+      "passed": true
+    },
+    {
+      "id": "case-25",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-26",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-27",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-28",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-29",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-30",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-31",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-32",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-33",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-34",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-35",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-36",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-37",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-38",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-39",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-40",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-41",
+      "status": 201,
+      "passed": true
+    },
+    {
+      "id": "case-42",
+      "status": 201,
+      "passed": true
+    }
+  ],
+  "bookingRetries": 2,
+  "savedQuoteRead": true,
+  "invalidRequestChecks": 5,
+  "passed": true
+}

@@ -1,0 +1,36 @@
+{
+  "name": "rea-hardening-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A full-stack Next.js app for measuring what REA sees before and after die-a-rea hardening.",
+  "engines": {
+    "node": "^24.22.1 || >=26.12.1"
+  },
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build --webpack && node scripts/prepare-standalone.mjs",
+    "start": "node .next/standalone/server.js",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.mjs",
+    "test:api": "node scripts/check-api.mjs",
+    "lab": "node scripts/lab.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.5",
+    "javascript-obfuscator": "5.10.0",
+    "rea-agents": "6.8.0",
+    "typescript": "5.9.3"
+  }
+}

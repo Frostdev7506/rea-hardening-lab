@@ -1,0 +1,26 @@
+{
+  "browser": {
+    "before": {
+      "bytes": 7896,
+      "gzipBytes": 2824,
+      "sha256": "c1c6694615bc1649fd43c9399b9234ce0c2d557e4ed6b1f26149b37a6a367acd"
+    },
+    "after": {
+      "bytes": 55677,
+      "gzipBytes": 20714,
+      "sha256": "a4e978d44b5c7c3d4f5e6685ff55d353e2c27ce675c93c90ac9783ff2a029d8b"
+    }
+  },
+  "server": {
+    "before": {
+      "bytes": 14435,
+      "gzipBytes": 6089,
+      "sha256": "3f1e45f431567754996e3decf4830906b156161db4477002401507b0fbd3f7eb"
+    },
+    "after": {
+      "bytes": 72490,
+      "gzipBytes": 27819,
+      "sha256": "78b6785dfb589fa1f54c0186237c48a872b54644748f459f8ef820001b1e8003"
+    }
+  }
+}
